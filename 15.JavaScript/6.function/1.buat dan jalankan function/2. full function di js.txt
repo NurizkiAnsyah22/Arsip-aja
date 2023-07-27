@@ -1,0 +1,125 @@
+Berikut ini adalah list built-in functions di JavaScript yang kamu minta, beserta contoh dan penjelasan singkatnya:
+
+1. Math Functions:
+- Math.abs(): Mengembalikan nilai absolut dari suatu angka.
+- Math.ceil(): Membulatkan suatu angka ke atas menjadi bilangan bulat terdekat.
+- Math.floor(): Membulatkan suatu angka ke bawah menjadi bilangan bulat terdekat.
+- Math.round(): Membulatkan suatu angka menjadi bilangan bulat terdekat.
+- Math.max(): Mengembalikan nilai terbesar dari sejumlah angka.
+- Math.min(): Mengembalikan nilai terkecil dari sejumlah angka.
+- Math.pow(): Mengembalikan hasil pangkat suatu angka.
+- Math.sqrt(): Mengembalikan akar kuadrat suatu angka.
+- Math.random(): Menghasilkan angka acak antara 0 (inklusif) dan 1 (eksklusif).
+
+2. String Functions:
+- String.length: Mengembalikan panjang (jumlah karakter) dari sebuah string.
+- String.charAt(): Mengembalikan karakter di posisi tertentu dalam sebuah string.
+- String.concat(): Menggabungkan (concatenate) dua atau lebih string.
+- String.includes(): Memeriksa apakah sebuah string berisi substring tertentu.
+- String.indexOf(): Mengembalikan indeks pertama kali ditemukannya sebuah substring dalam string.
+- String.lastIndexOf(): Mengembalikan indeks terakhir kali ditemukannya sebuah substring dalam string.
+- String.slice(): Memotong (slice) sebuah string berdasarkan indeks awal dan akhir.
+- String.substring(): Mengambil bagian (substring) dari sebuah string berdasarkan indeks awal dan akhir.
+- String.toLowerCase(): Mengubah semua karakter dalam string menjadi huruf kecil.
+- String.toUpperCase(): Mengubah semua karakter dalam string menjadi huruf besar.
+- String.trim(): Menghapus spasi kosong (whitespace) di awal dan akhir sebuah string.
+- String.replace(): Menggantikan substring tertentu dalam sebuah string dengan substring lain.
+- String.split(): Memecah (split) sebuah string menjadi array substring berdasarkan pemisah (separator).
+
+3. Array Functions:
+- Array.length: Mengembalikan panjang (jumlah elemen) dari sebuah array.
+- Array.concat(): Menggabungkan (concatenate) dua atau lebih array.
+- Array.join(): Menggabungkan semua elemen array menjadi sebuah string dengan pemisah (separator).
+- Array.push(): Menambahkan satu atau lebih elemen ke akhir array.
+- Array.pop(): Menghapus dan mengembalikan elemen terakhir dari array.
+- Array.shift(): Menghapus dan mengembalikan elemen pertama dari array.
+- Array.unshift(): Menambahkan satu atau lebih elemen ke awal array.
+- Array.slice(): Memotong (slice) array menjadi array baru berdasarkan indeks awal dan akhir.
+- Array.splice(): Mengubah isi array dengan menghapus, menambah, atau mengganti elemen.
+- Array.reverse(): Membalik urutan elemen-elemen dalam array.
+- Array.sort(): Mengurutkan elemen-elemen dalam array secara leksikografis (default) atau menggunakan fungsi pembanding.
+- Array.indexOf(): Mengembalikan indeks pertama kali ditemukannya sebuah elemen dalam array.
+- Array.lastIndexOf(): Mengembalikan indeks terakhir kali ditemukannya sebuah elemen dalam array.
+- Array.includes():
+
+ Memeriksa apakah sebuah elemen ada dalam array.
+- Array.forEach(): Menjalankan fungsi callback untuk setiap elemen dalam array.
+- Array.map(): Membuat array baru dengan hasil pemanggilan fungsi callback pada setiap elemen array.
+- Array.filter(): Membuat array baru dengan elemen-elemen yang lolos tes dari fungsi callback.
+- Array.reduce(): Mengurangi (reduce) elemen-elemen array menjadi sebuah nilai tunggal dengan menjalankan fungsi callback.
+- Array.reduceRight(): Mengurangi (reduce) elemen-elemen array dari kanan ke kiri menjadi sebuah nilai tunggal dengan menjalankan fungsi callback.
+
+4. Date Functions:
+- Date(): Membuat objek Date baru yang merepresentasikan waktu saat ini.
+- Date.now(): Mengembalikan jumlah milidetik sejak epoch Unix (1 Januari 1970 00:00:00 UTC) hingga saat ini.
+- Date.parse(): Mengubah string tanggal menjadi nilai waktu (milidetik sejak epoch Unix).
+- Date.UTC(): Mengembalikan nilai waktu (milidetik sejak epoch Unix) berdasarkan tanggal dalam koordinat waktu UTC.
+- Date.getDate(): Mengembalikan tanggal (1-31) dari objek Date.
+- Date.getDay(): Mengembalikan hari dalam bentuk angka (0-6) dari objek Date.
+- Date.getFullYear(): Mengembalikan tahun empat digit dari objek Date.
+- Date.getHours(): Mengembalikan jam (0-23) dari objek Date.
+- Date.getMinutes(): Mengembalikan menit (0-59) dari objek Date.
+- Date.getMonth(): Mengembalikan bulan (0-11) dari objek Date.
+- Date.getSeconds(): Mengembalikan detik (0-59) dari objek Date.
+- Date.getTime(): Mengembalikan nilai waktu (milidetik sejak epoch Unix) dari objek Date.
+- Date.getUTCDate(): Mengembalikan tanggal (1-31) dalam koordinat waktu UTC dari objek Date.
+- Date.getUTCDay(): Mengembalikan hari dalam bentuk angka (0-6) dalam koordinat waktu UTC dari objek Date.
+- Date.getUTCFullYear(): Mengembalikan tahun empat digit dalam koordinat waktu UTC dari objek Date.
+- Date.getUTCHours(): Mengembalikan jam (0-23) dalam koordinat waktu UTC dari objek Date.
+- Date.getUTCMinutes(): Mengembalikan menit (0-59) dalam koordinat waktu UTC dari objek Date.
+- Date.getUTCMonth(): Mengembalikan bulan (0-11) dalam koordinat waktu UTC dari objek Date.
+- Date.getUTCSeconds(): Mengembalikan detik (0-59) dalam koordinat waktu UTC dari objek Date.
+- Date.setDate(): Mengatur tanggal (1-31) dari objek Date.
+- Date.setFullYear(): Mengatur tahun empat digit dari objek Date.
+- Date.setHours(): Mengatur jam (0-23) dari objek Date.
+- Date.setMinutes(): Mengatur menit (0-59) dari objek Date.
+- Date.setMonth(): Mengatur bulan (0-11) dari objek Date.
+- Date.setSeconds(): Mengatur detik (0-59) dari objek Date.
+- Date.setTime(): Mengatur nilai waktu (milidetik sejak epoch Unix) dari objek Date.
+- Date.setUTCDate(): Mengatur tanggal (1-31) dalam koordinat waktu
+
+ UTC dari objek Date.
+- Date.setUTCFullYear(): Mengatur tahun empat digit dalam koordinat waktu UTC dari objek Date.
+- Date.setUTCHours(): Mengatur jam (0-23) dalam koordinat waktu UTC dari objek Date.
+- Date.setUTCMinutes(): Mengatur menit (0-59) dalam koordinat waktu UTC dari objek Date.
+- Date.setUTCMonth(): Mengatur bulan (0-11) dalam koordinat waktu UTC dari objek Date.
+- Date.setUTCSeconds(): Mengatur detik (0-59) dalam koordinat waktu UTC dari objek Date.
+
+5. Global Functions:
+- parseInt(): Mengubah string menjadi bilangan bulat (integer).
+- parseFloat(): Mengubah string menjadi bilangan pecahan (float).
+- isNaN(): Memeriksa apakah suatu nilai bukan angka (NaN).
+- isFinite(): Memeriksa apakah suatu nilai adalah angka terbatas (finite).
+- eval(): Mengevaluasi kode JavaScript yang diekspresikan dalam string.
+- encodeURI(): Mengkodekan URI dengan menggantikan karakter yang tidak valid dengan kode yang sesuai.
+- encodeURIComponent(): Mengkodekan komponen URI dengan menggantikan semua karakter yang tidak valid dengan kode yang sesuai.
+- decodeURI(): Mendekodekan URI yang telah dikodekan sebelumnya.
+- decodeURIComponent(): Mendekodekan komponen URI yang telah dikodekan sebelumnya.
+- setTimeout(): Menjadwalkan eksekusi fungsi atau kode tertentu setelah waktu tertentu.
+- clearTimeout(): Membatalkan jadwal eksekusi yang diatur sebelumnya dengan setTimeout().
+- setInterval(): Menjadwalkan eksekusi fungsi atau kode tertentu secara berulang setiap interval waktu tertentu.
+- clearInterval(): Membatalkan jadwal eksekusi berulang yang diatur sebelumnya dengan setInterval().
+- console.log(): Menampilkan pesan di konsol.
+- console.error(): Menampilkan pesan error di konsol.
+- console.warn(): Menampilkan pesan peringatan di konsol.
+- console.info(): Menampilkan pesan informasi di konsol.
+- console.table(): Menampilkan data dalam bentuk tabel di konsol.
+- alert(): Menampilkan dialog pesan dengan pesan dan tombol OK.
+- confirm(): Menampilkan dialog pesan dengan pesan, tombol OK, dan tombol Batal.
+- prompt(): Menampilkan dialog pesan dengan pesan, input teks, tombol OK, dan tombol Batal.
+
+6. JSON Functions:
+- JSON.parse(): Mengonversi string JSON menjadi objek JavaScript.
+- JSON.stringify(): Mengonversi objek JavaScript menjadi string JSON.
+
+7. Regular Expression Functions:
+- RegExp.test(): Memeriksa apakah ada kecocokan antara ekspresi reguler dengan string yang diberikan.
+- RegExp.exec(): Mengembalikan array berisi informasi tentang kecocokan antara ekspresi reguler dengan string yang diberikan.
+- String.match(): Mengembalikan array berisi informasi tentang kecocokan antara ekspresi reguler dengan string yang diberikan.
+- String.search(): Mengembalikan indeks pertama kali ditemukannya ekspresi reguler dalam string.
+- String.replace(): Menggantikan kecocokan ekspresi reguler dalam string dengan substring baru.
+- String.split(): Memecah (split) sebuah string menjadi array substring berdasarkan pemisah (separator).
+
+Demikian
+
+lah list built-in functions yang umum digunakan dalam JavaScript beserta contoh dan penjelasan singkatnya.

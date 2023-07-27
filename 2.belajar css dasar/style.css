@@ -1,0 +1,17 @@
+
+/*css pertemuan 1 */
+h1 {
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:50px;
+    font-weight: 600;
+    font-style: italic;
+    font-variant: small-caps
+    ;
+}
+p { color: rgb(93, 8, 196);
+ font-family: arial;
+    font-size: 10px;
+    font-weight: 15px;
+    line-height: 20px;
+}

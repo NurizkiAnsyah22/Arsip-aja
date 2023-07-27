@@ -1,0 +1,95 @@
+## Materi: Scope di JavaScript
+
+### Pengertian Scope
+Scope dalam JavaScript mengacu pada bagaimana variabel diakses dan dikelola selama waktu eksekusi program. Scope menentukan keterjangkauan variabel, fungsi, dan objek dalam kode. Dalam JavaScript, terdapat dua jenis scope utama: scope global dan scope lokal.
+
+### Global Scope
+Variabel yang dideklarasikan di luar fungsi memiliki scope global. Variabel global dapat diakses dan dimodifikasi dari mana saja dalam program JavaScript.
+
+Contoh implementasi scope global:
+```javascript
+var globalVariable = 'Ini adalah variabel global';
+
+function testGlobalScope() {
+  console.log(globalVariable); // Mengakses variabel global
+}
+
+testGlobalScope(); // Output: Ini adalah variabel global
+console.log(globalVariable); // Output: Ini adalah variabel global
+```
+
+### Local Scope
+Variabel yang dideklarasikan di dalam fungsi memiliki scope lokal. Variabel lokal hanya dapat diakses dari dalam fungsi di mana mereka dideklarasikan. Mereka tidak dapat diakses dari luar fungsi tersebut.
+
+Contoh implementasi scope lokal:
+```javascript
+function testLocalScope() {
+  var localVariable = 'Ini adalah variabel lokal';
+  console.log(localVariable); // Mengakses variabel lokal
+}
+
+testLocalScope(); // Output: Ini adalah variabel lokal
+console.log(localVariable); // Error: localVariable is not defined
+```
+
+### Lexical Scope
+JavaScript menggunakan lexical scope atau static scope. Artinya, scope di dalam fungsi ditentukan oleh tempat di mana fungsi tersebut didefinisikan dalam kode, bukan tempat di mana fungsi tersebut dipanggil. Hal ini memungkinkan fungsi tersebut mengakses variabel dari scope di atasnya, seperti fungsi induk atau global scope.
+
+Contoh implementasi lexical scope:
+```javascript
+function outerFunction() {
+  var outerVariable = 'Variabel luar';
+
+  function innerFunction() {
+    console.log(outerVariable); // Mengakses variabel dari scope luar
+  }
+
+  innerFunction();
+}
+
+outerFunction(); // Output: Variabel luar
+```
+
+### Block Scope (ES6)
+Sebelum ECMAScript 6 (ES6), JavaScript hanya memiliki scope global dan lokal (fungsi). Namun, dengan ES6, diperkenalkan blok scope menggunakan kata kunci `let` dan `const`. Variabel yang dideklarasikan dengan `let` atau `const` memiliki scope blok yang terbatas pada blok di mana mereka dideklarasikan, seperti dalam loop `for` atau blok `if`.
+
+Contoh implementasi block scope:
+```javascript
+function testBlockScope() {
+  if (true) {
+    let blockVariable = 'Ini adalah variabel dalam blok';
+    console.log(blockVariable); // Mengakses variabel dalam blok
+  }
+
+  console.log(blockVariable); // Error: blockVariable is not defined
+}
+
+testBlockScope();
+```
+
+### Closure
+Closure adalah kombinasi antara fungsi dan lingkungan lexical di mana fungsi tersebut didefinisikan. Closure memungkinkan sebuah fungsi untuk mengakses variabel-variabel di dalam lingkungan lexicalnya, meskipun fungsi tersebut dieksekusi di luar lingkungan lexical tersebut.
+
+Contoh implementasi closure:
+```javascript
+function outerFunction() {
+  var outerVariable = 'Variabel luar';
+
+  function innerFunction() {
+    console.log(outerVariable); // Mengakses
+
+ variabel dari lingkungan lexical luar
+  }
+
+  return innerFunction;
+}
+
+var closure = outerFunction();
+closure(); // Output: Variabel luar
+```
+
+Dalam contoh di atas, fungsi `innerFunction` merupakan closure karena masih memiliki akses ke variabel `outerVariable` bahkan setelah fungsi `outerFunction` selesai dieksekusi.
+
+Itu adalah penjelasan singkat tentang scope di JavaScript. Semoga bisa membantu pemahaman Anda tentang konsep scope dalam JavaScript.
+
+Apakah ada implementasi atau contoh spesifik yang ingin Anda lihat?

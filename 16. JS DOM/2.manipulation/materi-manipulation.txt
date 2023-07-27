@@ -1,0 +1,54 @@
+DOM (Document Object Model) manipulation adalah teknik pengubahan elemen-elemen HTML dan CSS secara dinamis menggunakan JavaScript. Dengan DOM manipulation, Anda dapat mengakses, menambahkan, menghapus, dan mengubah elemen-elemen dalam halaman web.
+
+Berikut adalah langkah-langkah umum untuk melakukan DOM manipulation menggunakan JavaScript:
+
+1. Mengakses elemen: Anda perlu mengakses elemen-elemen yang ingin Anda manipulasi. Ada beberapa metode untuk melakukannya, misalnya:
+   - `getElementById(id)`: Mengembalikan elemen dengan ID yang cocok.
+   - `getElementsByClassName(className)`: Mengembalikan kumpulan elemen dengan kelas yang cocok.
+   - `getElementsByTagName(tagName)`: Mengembalikan kumpulan elemen dengan tag yang cocok.
+   - `querySelector(selector)`: Mengembalikan elemen pertama yang cocok dengan selector CSS.
+   - `querySelectorAll(selector)`: Mengembalikan semua elemen yang cocok dengan selector CSS.
+
+2. Mengubah konten elemen: Setelah Anda mengakses elemen yang tepat, Anda dapat mengubah kontennya. Beberapa metode yang umum digunakan adalah:
+   - `innerHTML`: Mengatur atau mendapatkan HTML di dalam elemen.
+   - `textContent`: Mengatur atau mendapatkan teks di dalam elemen.
+
+3. Menambahkan atau menghapus elemen: Anda dapat menambahkan elemen baru ke dalam dokumen atau menghapus elemen yang ada. Beberapa metode yang umum digunakan adalah:
+   - `createElement(tagName)`: Membuat elemen baru dengan tag yang ditentukan.
+   - `appendChild(node)`: Menambahkan node sebagai anak terakhir dari elemen yang dipilih.
+   - `removeChild(node)`: Menghapus node anak dari elemen yang dipilih.
+
+4. Mengubah atribut elemen: Anda dapat mengubah atribut elemen menggunakan metode `setAttribute(attribute, value)` atau `getAttribute(attribute)` untuk mengatur atau mendapatkan nilai atribut.
+
+5. Menambahkan atau menghapus kelas CSS: Anda dapat menambahkan atau menghapus kelas CSS pada elemen menggunakan metode `classList.add(className)` dan `classList.remove(className)`.
+
+Berikut adalah contoh implementasi sederhana DOM manipulation:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+  <h1 id="title">Hello, World!</h1>
+  <button id="changeButton">Change Text</button>
+
+  <script>
+    // Mengubah teks pada elemen dengan ID "title"
+    var titleElement = document.getElementById("title");
+    titleElement.textContent = "Welcome to DOM Manipulation!";
+
+    // Menambahkan event listener ke tombol dengan ID "changeButton"
+    var changeButton = document.getElementById("changeButton");
+    changeButton.addEventListener("click", function() {
+      titleElement.textContent = "Text Changed!";
+    });
+  </script>
+</body>
+</html>
+```
+
+Pada contoh di atas, elemen `<h1>` dengan ID "title" diubah teksnya menggunakan `textContent`. Ketika tombol dengan ID "changeButton" diklik, teks pada elemen `<h1>` akan berubah menjadi "Text Changed!".
+
+Anda dapat menyesuaikan kode JavaScript sesuai dengan kebutuhan Anda, misalnya dengan menambahkan atau menghapus elemen, mengubah atribut, atau mengganti kelas CSS.

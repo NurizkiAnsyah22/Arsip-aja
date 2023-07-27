@@ -1,0 +1,7 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: darkgreen;
+}
+a {
+    color: inherit;  /*dengan nulis inherit si a jadi mmengikuti body/induk nya (font-family dan color*/
+}

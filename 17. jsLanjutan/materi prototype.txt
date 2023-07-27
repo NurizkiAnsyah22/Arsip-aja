@@ -1,0 +1,47 @@
+JavaScript Prototype adalah mekanisme dasar dalam JavaScript yang memungkinkan Anda untuk berbagi properti dan metode antara objek-objek yang dibuat menggunakan konstruktor atau fungsi konstruktor. Dengan menggunakan prototype, Anda dapat membuat properti dan metode yang dapat diakses oleh semua objek yang dibuat menggunakan konstruktor yang sama, tanpa perlu menggandakan definisi properti dan metode di setiap objek.
+
+1. Pengertian Prototype:
+   - Setiap objek di JavaScript memiliki referensi ke objek prototipe yang terkait dengannya.
+   - Prototipe adalah objek lain yang digunakan sebagai dasar untuk mencari properti dan metode ketika mereka tidak ditemukan pada objek itu sendiri.
+   - Saat Anda mengakses properti atau metode pada suatu objek, JavaScript akan mencari properti atau metode tersebut di objek itu sendiri. Jika tidak ditemukan, itu akan mencari di prototipe objek tersebut, dan jika masih tidak ditemukan, akan terus mencari di prototipe yang lebih tinggi dalam rantai prototipe, hingga mencapai prototipe dasar (`Object.prototype`).
+
+2. Properti `prototype`:
+   - Setiap fungsi konstruktor JavaScript memiliki properti `prototype` yang secara otomatis dibuat dan terkait dengan objek prototipe kosong.
+   - Properti `prototype` adalah objek yang digunakan sebagai prototipe untuk objek-objek yang dibuat menggunakan fungsi konstruktor tersebut.
+   - Anda dapat menambahkan properti dan metode ke objek prototipe menggunakan sintaksis `namaFungsi.prototype.namaProperti = nilai` atau `namaFungsi.prototype.namaMetode = fungsi`.
+
+3. Pewarisan Prototipe:
+   - Saat Anda membuat objek menggunakan fungsi konstruktor, objek tersebut secara otomatis terhubung ke prototipe fungsi konstruktor melalui properti `__proto__`.
+   - Jika properti atau metode tidak ditemukan pada objek itu sendiri, JavaScript akan mencarinya di prototipe melalui properti `__proto__`. Jika masih tidak ditemukan, pencarian akan dilanjutkan ke prototipe yang lebih tinggi dalam rantai prototipe, hingga mencapai prototipe dasar (`Object.prototype`).
+   - Dengan menggunakan konsep ini, Anda dapat membuat hierarki objek dan mewarisi properti dan metode dari prototipe yang lebih tinggi.
+
+4. Implementasi:
+   - Membuat Objek dengan Prototype:
+     ```javascript
+     function Mahasiswa(nama) {
+       this.nama = nama;
+     }
+
+     Mahasiswa.prototype.greeting = function () {
+       console.log(`Halo, nama saya ${this.nama}`);
+     };
+
+     let mhs = new Mahasiswa("John");
+     mhs.greeting(); // Output: Halo, nama saya John
+     ```
+
+   - Pewarisan Prototype:
+     ```javascript
+     function Dosen(nama, jabatan) {
+       this.nama = nama;
+       this.jabatan = jabatan;
+     }
+
+     Dosen.prototype = Object.create(Mahasiswa.prototype); // Pewarisan prototipe
+
+     Dosen.prototype.introduce = function () {
+       console.log(`Halo, nama saya ${this.nama}, saya adalah seorang ${this.jabatan}`);
+     };
+
+     let dosen = new Dosen("Jane", "Dosen");
+     dosen

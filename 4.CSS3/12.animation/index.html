@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+
+    <style>
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            transition: 2s ease all;
+            margin: 5px;
+
+        }
+
+        .kotak:hover {
+
+            width: 500px;
+        }
+
+        .kotak2 {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            background-color: salmon;
+            
+            
+
+        }
+
+        .kotak2:hover {
+            
+            animation: animasikotak2 2s ease;
+        }
+        @keyframes animasikotak2 {
+            from {
+
+                width: 200px;
+
+             50% {
+                width: 500px;
+                height: 200px;
+             }   
+
+            }
+            to {
+                width: 500px;
+                height: 500px;
+            }
+            
+        }
+        
+
+        .kotak3 {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            animation: animasikotak3 2s ease infinite; /* tulis 2 untuk 2 kali ngulang
+            atau infinite untuk terus mengulang*/
+            
+
+        }
+            
+
+        @keyframes animasikotak3 {
+            from {
+
+                width: 200px;
+
+             50% {
+                width: 500px;
+                height: 200px;
+             }   
+
+            }
+            to {
+                width: 500px;
+                height: 500px;
+            }
+            
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+
+    <div class="kotak2"></div>
+
+    <div class="kotak3"></div>
+    
+</body>
+</html>

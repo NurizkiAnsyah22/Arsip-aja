@@ -1,0 +1,140 @@
+Tentu, berikut ini adalah list sintaks JavaScript secara lengkap, beserta penjelasan dan contoh penggunaannya:
+
+1. Sintaks dasar:
+   - Variabel: Mendeklarasikan dan menginisialisasi variabel.
+     ```javascript
+     let nama = 'John';
+     ```
+
+   - Komentar: Memberikan penjelasan atau dokumentasi dalam kode.
+     ```javascript
+     // Ini adalah komentar satu baris
+     
+     /* Ini adalah komentar
+        multi-baris */
+     ```
+
+   - Fungsi: Membuat dan menggunakan fungsi.
+     ```javascript
+     function tambah(a, b) {
+       return a + b;
+     }
+     
+     let hasil = tambah(5, 3);
+     ```
+
+   - Pengkondisian: Melakukan pengecekan kondisi untuk mengambil keputusan.
+     ```javascript
+     if (nilai > 80) {
+       console.log('Lulus');
+     } else {
+       console.log('Tidak Lulus');
+     }
+     ```
+
+   - Perulangan: Melakukan tindakan berulang berdasarkan kondisi atau iterasi.
+     ```javascript
+     for (let i = 0; i < 5; i++) {
+       console.log(i);
+     }
+     ```
+
+2. Tipe Data dan Operasi:
+   - String: Merepresentasikan teks.
+     ```javascript
+     let nama = 'John';
+     ```
+
+   - Number: Merepresentasikan angka.
+     ```javascript
+     let angka = 10;
+     ```
+
+   - Boolean: Merepresentasikan nilai true atau false.
+     ```javascript
+     let benar = true;
+     ```
+
+   - Array: Merepresentasikan kumpulan nilai dalam satu variabel.
+     ```javascript
+     let angka = [1, 2, 3, 4, 5];
+     ```
+
+   - Objek: Merepresentasikan entitas dengan properti dan metode.
+     ```javascript
+     let person = {
+       nama: 'John',
+       umur: 25,
+       getInfo: function() {
+         return this.nama + ' berumur ' + this.umur + ' tahun.';
+       }
+     };
+     ```
+
+   - Operasi Aritmatika: Melakukan operasi matematika.
+     ```javascript
+     let hasil = 10 + 5;
+     ```
+
+   - Operasi Perbandingan: Membandingkan nilai.
+     ```javascript
+     let x = 5;
+     let y = 10;
+     let hasil = x > y;
+     ```
+
+   - Operasi Logika: Menggabungkan dan memanipulasi nilai boolean.
+     ```javascript
+     let a = true;
+     let b = false;
+     let hasil = a && b;
+     ```
+
+3. Objek Bawaan (Built-in Objects):
+   - Math: Menyediakan fungsi matematika.
+     ```javascript
+     let hasil = Math.sqrt(16);
+     ```
+
+   - String: Menyediakan fungsi untuk memanipulasi string.
+     ```javascript
+     let nama = 'John';
+     let panjang = nama.length;
+     ```
+
+   - Array: Menyediakan fungsi untuk memanipulasi array.
+     ```javascript
+     let angka = [1, 2, 3, 4, 5];
+     let total = angka.reduce((a, b) => a + b);
+     ```
+
+   - Date: Menyediakan
+
+ fungsi untuk bekerja dengan tanggal dan waktu.
+     ```javascript
+     let sekarang = new Date();
+     let tahun = sekarang.getFullYear();
+     ```
+
+4. Input/Output:
+   - Console: Menampilkan informasi di konsol.
+     ```javascript
+     console.log('Hello, world!');
+     ```
+
+   - Alert: Menampilkan dialog pesan pada browser.
+     ```javascript
+     alert('Ini adalah pesan!');
+     ```
+
+   - Prompt: Menampilkan dialog input pada browser.
+     ```javascript
+     let nama = prompt('Masukkan nama Anda:');
+     ```
+
+   - Confirm: Menampilkan dialog konfirmasi pada browser.
+     ```javascript
+     let konfirmasi = confirm('Apakah Anda yakin?');
+     ```
+
+Itulah beberapa sintaks JavaScript secara lengkap beserta penjelasan dan contoh penggunaannya. Perlu diingat bahwa daftar ini mencakup sintaks umum yang sering digunakan, namun JavaScript memiliki banyak fitur dan sintaks lainnya. Selalu merujuk ke dokumentasi resmi JavaScript untuk mempelajari lebih lanjut dan menjelajahi sintaks yang lebih lanjut.

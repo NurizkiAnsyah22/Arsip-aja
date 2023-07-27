@@ -1,0 +1,62 @@
+Materi Prevent Default
+=======================
+
+Prevent Default adalah metode yang digunakan untuk mencegah perilaku bawaan (default) dari suatu peristiwa (event) pada elemen HTML. Ketika sebuah elemen menerima suatu peristiwa, seperti mengklik tautan atau mengirim formulir, biasanya akan terjadi tindakan bawaan yang terkait dengan peristiwa tersebut. Metode prevent default memungkinkan Anda untuk menghentikan perilaku bawaan tersebut dan menggantikannya dengan perilaku yang Anda tentukan.
+
+Implementasi Prevent Default
+=============================
+
+Berikut adalah beberapa contoh implementasi metode prevent default menggunakan JavaScript:
+
+1. Menghentikan Tindakan Bawaan Tautan (Link)
+---------------------------------------------
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prevent Default Example</title>
+</head>
+<body>
+  <a href="https://www.example.com" id="myLink">Klik Saya</a>
+
+  <script>
+    const myLink = document.getElementById("myLink");
+
+    myLink.addEventListener("click", function(event) {
+      event.preventDefault();
+      console.log("Tautan di klik, tetapi tindakan bawaan dihentikan.");
+    });
+  </script>
+</body>
+</html>
+```
+Dalam contoh ini, metode prevent default digunakan untuk mencegah tindakan bawaan dari tautan ketika diklik. Di dalam fungsi event listener, preventDefault() dipanggil untuk menghentikan peristiwa default, dan pesan akan dicetak ke konsol.
+
+2. Mencegah Pengiriman Formulir
+-------------------------------
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prevent Default Example</title>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" name="name" placeholder="Nama">
+    <button type="submit">Kirim</button>
+  </form>
+
+  <script>
+    const myForm = document.getElementById("myForm");
+
+    myForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      console.log("Formulir tidak akan dikirim.");
+    });
+  </script>
+</body>
+</html>
+```
+Pada contoh ini, preventDefault() digunakan untuk mencegah pengiriman formulir saat tombol "Kirim" ditekan. Ketika formulir dikirim, prevent default akan mencegah perilaku bawaan pengiriman formulir dan pesan akan dicetak ke konsol.
+
+Dengan menggunakan metode prevent default, Anda dapat mengendalikan perilaku bawaan dari peristiwa-peristiwa pada elemen HTML dan menggantikannya dengan tindakan yang Anda inginkan. Hal ini memberikan fleksibilitas dalam pengembangan aplikasi web dan memungkinkan Anda untuk melakukan tindakan khusus berdasarkan kebutuhan Anda.

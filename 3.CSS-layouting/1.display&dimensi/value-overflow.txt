@@ -1,0 +1,51 @@
+Berikut adalah beberapa nilai yang umum digunakan untuk properti `overflow` dalam CSS beserta kegunaannya:
+
+1. `visible`: Ini adalah nilai default. Konten yang melebihi batas elemen akan tetap terlihat di luar elemen tersebut.
+
+   Contoh penggunaan:
+   ```css
+   .container {
+     overflow: visible;
+   }
+   ```
+
+2. `hidden`: Konten yang melebihi batas elemen akan disembunyikan.
+
+   Contoh penggunaan:
+   ```css
+   .container {
+     overflow: hidden;
+   }
+   ```
+
+3. `scroll`: Scrollbar akan ditampilkan baik secara horizontal maupun vertikal, bahkan jika konten tidak melebihi batas elemen.
+
+   Contoh penggunaan:
+   ```css
+   .container {
+     overflow: scroll;
+   }
+   ```
+
+4. `auto`: Scrollbar akan ditampilkan hanya jika konten melebihi batas elemen.
+
+   Contoh penggunaan:
+   ```css
+   .container {
+     overflow: auto;
+   }
+   ```
+
+Contoh script CSS lengkap dengan penggunaan properti `overflow` dalam praktek:
+
+```css
+.container {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+}
+```
+
+Pada contoh di atas, elemen dengan kelas `.container` memiliki lebar 200 piksel dan tinggi 150 piksel. Jika konten di dalam elemen tersebut melebihi batas tersebut, maka konten yang keluar dari batas elemen akan disembunyikan (overflow: hidden).
+
+Anda dapat mengubah nilai properti `overflow` sesuai dengan kebutuhan desain Anda dan menyesuaikan ukuran elemen serta perilaku overflow yang diinginkan.

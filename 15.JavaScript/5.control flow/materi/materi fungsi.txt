@@ -1,0 +1,260 @@
+Berikut ini adalah beberapa fungsi bawaan dalam bahasa pemrograman JavaScript beserta penjelasan singkat tentang kegunaan masing-masing fungsi tersebut:
+
+1. `parseInt()`: Mengonversi string menjadi bilangan bulat (integer).
+2. `parseFloat()`: Mengonversi string menjadi bilangan pecahan (float).
+3. `isNaN()`: Memeriksa apakah suatu nilai adalah NaN (Not a Number).
+4. `typeof()`: Mengembalikan tipe data dari suatu nilai.
+5. `Math.random()`: Menghasilkan angka acak antara 0 dan 1.
+6. `Math.floor()`: Membulatkan angka ke bawah menjadi bilangan bulat terdekat.
+7. `Math.ceil()`: Membulatkan angka ke atas menjadi bilangan bulat terdekat.
+8. `Math.round()`: Membulatkan angka ke bilangan bulat terdekat.
+9. `Math.max()`: Mengembalikan nilai terbesar dari sejumlah angka.
+10. `Math.min()`: Mengembalikan nilai terkecil dari sejumlah angka.
+11. `Array.isArray()`: Memeriksa apakah suatu nilai adalah array.
+12. `Array.from()`: Membuat array baru dari objek yang dapat diiterasi.
+13. `Array.push()`: Menambahkan satu atau lebih elemen ke akhir array.
+14. `Array.pop()`: Menghapus dan mengembalikan elemen terakhir dari array.
+15. `Array.shift()`: Menghapus dan mengembalikan elemen pertama dari array.
+16. `Array.unshift()`: Menambahkan satu atau lebih elemen ke awal array.
+17. `Array.slice()`: Mengambil sebagian dari array dan membuat array baru.
+18. `Array.splice()`: Mengubah isi array dengan menghapus, mengganti, atau menambah elemen.
+19. `String.length()`: Mengembalikan jumlah karakter dalam string.
+20. `String.charAt()`: Mengembalikan karakter pada posisi tertentu dalam string.
+21. `String.indexOf()`: Mengembalikan indeks dari kemunculan pertama suatu substring dalam string.
+22. `String.toUpperCase()`: Mengonversi string menjadi huruf kapital.
+23. `String.toLowerCase()`: Mengonversi string menjadi huruf kecil.
+24. `String.split()`: Memisahkan string menjadi array substring berdasarkan separator yang ditentukan.
+25. `String.concat()`: Menggabungkan dua atau lebih string.
+26. `String.replace()`: Menggantikan substring tertentu dengan substring lain dalam string.
+27. `String.trim()`: Menghapus spasi di awal dan akhir string.
+
+Itu hanya beberapa fungsi bawaan dalam JavaScript. Bahasa pemrograman JavaScript memiliki banyak fungsi lainnya yang memungkinkan Anda untuk melakukan berbagai operasi dan manipulasi data dengan lebih efisien.
+
+
+Berikut ini adalah beberapa contoh penggunaan fungsi-fungsi dalam JavaScript yang telah disebutkan sebelumnya:
+
+1. Contoh penggunaan `parseInt()`:
+
+```javascript
+let angka = parseInt("123");
+console.log(angka); // Output: 123
+
+let angka2 = parseInt("9.99");
+console.log(angka2); // Output: 9
+
+let angka3 = parseInt("Hello");
+console.log(angka3); // Output: NaN
+```
+
+2. Contoh penggunaan `parseFloat()`:
+
+```javascript
+let angka = parseFloat("3.14");
+console.log(angka); // Output: 3.14
+
+let angka2 = parseFloat("2.7");
+console.log(angka2); // Output: 2.7
+
+let angka3 = parseFloat("Hello");
+console.log(angka3); // Output: NaN
+```
+
+3. Contoh penggunaan `isNaN()`:
+
+```javascript
+console.log(isNaN(123)); // Output: false
+console.log(isNaN("Hello")); // Output: true
+console.log(isNaN("123")); // Output: false
+```
+
+4. Contoh penggunaan `typeof()`:
+
+```javascript
+console.log(typeof 123); // Output: "number"
+console.log(typeof "Hello"); // Output: "string"
+console.log(typeof true); // Output: "boolean"
+console.log(typeof [1, 2, 3]); // Output: "object"
+```
+
+5. Contoh penggunaan `Math.random()`:
+
+```javascript
+let randomNum = Math.random();
+console.log(randomNum); // Output: angka acak antara 0 dan 1
+```
+
+6. Contoh penggunaan `Math.floor()`:
+
+```javascript
+let angka = 4.9;
+let hasil = Math.floor(angka);
+console.log(hasil); // Output: 4
+```
+
+7. Contoh penggunaan `Math.ceil()`:
+
+```javascript
+let angka = 4.1;
+let hasil = Math.ceil(angka);
+console.log(hasil); // Output: 5
+```
+
+8. Contoh penggunaan `Math.round()`:
+
+```javascript
+let angka = 4.6;
+let hasil = Math.round(angka);
+console.log(hasil); // Output: 5
+```
+
+9. Contoh penggunaan `Math.max()`:
+
+```javascript
+let angka = Math.max(10, 5, 8, 3);
+console.log(angka); // Output: 10
+```
+
+10. Contoh penggunaan `Math.min()`:
+
+```javascript
+let angka = Math.min(10, 5, 8, 3);
+console.log(angka); // Output: 3
+```
+
+11. Contoh penggunaan `Array.isArray()`:
+
+```javascript
+console.log(Array.isArray([1, 2, 3])); // Output: true
+console.log(Array.isArray("Hello")); // Output: false
+```
+
+12. Contoh penggunaan `Array.from()`:
+
+```javascript
+let str = "Hello";
+let arr = Array.from(str);
+console.log(arr); // Output: ["H", "e", "l", "l", "o"]
+```
+
+13. Contoh penggunaan `Array.push()`:
+
+```javascript
+let arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // Output: [1, 2, 3, 4]
+```
+
+14. Contoh penggunaan `Array.pop()`:
+
+```javascript
+let arr = [1, 2, 3];
+let removedElement = arr.pop();
+
+
+console.log(removedElement); // Output: 3
+console.log(arr); // Output: [1, 2]
+```
+
+15. Contoh penggunaan `Array.shift()`:
+
+```javascript
+let arr = [1, 2, 3];
+let removedElement = arr.shift();
+console.log(removedElement); // Output: 1
+console.log(arr); // Output: [2, 3]
+```
+
+16. Contoh penggunaan `Array.unshift()`:
+
+```javascript
+let arr = [2, 3, 4];
+arr.unshift(1);
+console.log(arr); // Output: [1, 2, 3, 4]
+```
+
+17. Contoh penggunaan `Array.slice()`:
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.slice(1, 4);
+console.log(newArr); // Output: [2, 3, 4]
+```
+
+18. Contoh penggunaan `Array.splice()`:
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+arr.splice(2, 2, 6, 7);
+console.log(arr); // Output: [1, 2, 6, 7, 5]
+```
+
+19. Contoh penggunaan `String.length()`:
+
+```javascript
+let str = "Hello";
+console.log(str.length); // Output: 5
+```
+
+20. Contoh penggunaan `String.charAt()`:
+
+```javascript
+let str = "Hello";
+console.log(str.charAt(0)); // Output: "H"
+```
+
+21. Contoh penggunaan `String.indexOf()`:
+
+```javascript
+let str = "Hello";
+console.log(str.indexOf("l")); // Output: 2
+console.log(str.indexOf("x")); // Output: -1 (tidak ditemukan)
+```
+
+22. Contoh penggunaan `String.toUpperCase()`:
+
+```javascript
+let str = "Hello";
+console.log(str.toUpperCase()); // Output: "HELLO"
+```
+
+23. Contoh penggunaan `String.toLowerCase()`:
+
+```javascript
+let str = "Hello";
+console.log(str.toLowerCase()); // Output: "hello"
+```
+
+24. Contoh penggunaan `String.split()`:
+
+```javascript
+let str = "Hello, World";
+let arr = str.split(",");
+console.log(arr); // Output: ["Hello", " World"]
+```
+
+25. Contoh penggunaan `String.concat()`:
+
+```javascript
+let str1 = "Hello";
+let str2 = "World";
+let str3 = str1.concat(" ", str2);
+console.log(str3); // Output: "Hello World"
+```
+
+26. Contoh penggunaan `String.replace()`:
+
+```javascript
+let str = "Hello, World";
+let newStr = str.replace("World", "Universe");
+console.log(newStr); // Output: "Hello, Universe"
+```
+
+27. Contoh penggunaan `String.trim()`:
+
+```javascript
+let str = "   Hello   ";
+let trimmedStr = str.trim();
+console.log(trimmedStr); // Output: "Hello"
+```
+
+Itulah beberapa contoh penggunaan fungsi-fungsi dalam JavaScript. Anda dapat mencoba menjalankan kode-kode di atas untuk melihat hasilnya.

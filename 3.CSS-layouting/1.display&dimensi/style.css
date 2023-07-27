@@ -1,0 +1,24 @@
+/*css tanpa overflow*/
+div { 
+    height: 200px;
+    width: 200px;
+    background-color:pink;
+   }
+   .satu {  /*css pakai overflow auto*/
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    overflow: auto;
+   }
+   .dua {  /*css pakai overflow hidden*/
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    overflow: hidden;
+   }
+   .tiga {  /*css pakai overflow scroll*/
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    overflow:scroll;
+   }

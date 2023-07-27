@@ -1,0 +1,51 @@
+Tentu! Berikut ini adalah penjelasan tentang CSS Property Animation, Keyframes, dan contoh penggunaannya:
+
+1. CSS Property Animation:
+   CSS Property Animation adalah cara untuk menganimasikan elemen HTML menggunakan properti CSS. Dengan animasi, Anda dapat mengubah nilai properti dari satu keadaan ke keadaan lain secara mulus, menciptakan efek pergerakan, perubahan warna, perubahan ukuran, dan banyak lagi.
+
+   Untuk membuat animasi menggunakan CSS Property Animation, Anda membutuhkan dua komponen utama: properti yang ingin diubah dan aturan animasi yang mengendalikan bagaimana properti tersebut berubah dari satu nilai ke nilai lainnya.
+
+   Contoh penggunaan CSS Property Animation:
+   ```css
+   /* Menganimasikan lebar elemen dari 100px menjadi 200px */
+   .box {
+     width: 100px;
+     animation-name: expand-width;
+     animation-duration: 2s;
+   }
+
+   @keyframes expand-width {
+     from { width: 100px; }
+     to { width: 200px; }
+   }
+   ```
+
+2. Keyframes:
+   Keyframes adalah bagian penting dari animasi CSS. Mereka mendefinisikan serangkaian titik kunci (keyframes) yang menentukan perubahan nilai properti pada berbagai tahap animasi. Keyframes terdiri dari dua bagian: selector dan deklarasi properti.
+
+   Selector menentukan posisi animasi pada titik tertentu, seperti "from" untuk awal animasi dan "to" untuk akhir animasi, atau persentase untuk menentukan titik-titik kunci di antara mereka.
+
+   Contoh penggunaan Keyframes:
+   ```css
+   /* Menganimasikan perubahan warna elemen secara berulang */
+   .box {
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     animation-name: color-change;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+   }
+
+   @keyframes color-change {
+     0% { background-color: red; }
+     50% { background-color: blue; }
+     100% { background-color: green; }
+   }
+   ```
+
+   Dalam contoh di atas, warna latar belakang elemen akan berubah dari merah ke biru pada 50% animasi, lalu berubah dari biru ke hijau saat mencapai 100% animasi.
+
+Ini adalah penjelasan singkat tentang CSS Property Animation, Keyframes, dan contoh penggunaannya. Anda dapat menggabungkan konsep ini dengan properti CSS lainnya untuk membuat animasi yang lebih kompleks dan menarik. Jika Anda ingin mengeksplorasi lebih lanjut tentang animasi CSS, ada banyak sumber dan tutorial yang tersedia secara online yang dapat membantu Anda memahami lebih dalam tentang topik ini.
+
+Jika Anda memiliki pertanyaan lebih lanjut atau memerlukan contoh atau penjelasan lebih lanjut, jangan ragu untuk bertanya!

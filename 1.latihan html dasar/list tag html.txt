@@ -1,0 +1,41 @@
+Tentu! Berikut ini adalah daftar lebih lengkap dengan beberapa tag HTML yang umum digunakan beserta penjelasan singkat dan beberapa tag HTML terbaru yang diperkenalkan dalam HTML5:
+
+1. `<html>`: Menandai awal dan akhir dari dokumen HTML.
+2. `<head>`: Berisi informasi tentang dokumen seperti judul, stylesheet, dan metadata.
+3. `<title>`: Menentukan judul dokumen yang akan ditampilkan di bilah judul browser.
+4. `<body>`: Berisi konten yang akan ditampilkan pada halaman web.
+5. `<h1>` hingga `<h6>`: Membuat judul dengan tingkat prioritas yang berbeda.
+6. `<p>`: Membuat paragraf teks.
+7. `<a>`: Membuat tautan atau hyperlink ke halaman web lain.
+8. `<img>`: Menyisipkan gambar pada halaman web.
+9. `<ul>`: Membuat daftar yang tidak terurut (bullet points).
+10. `<ol>`: Membuat daftar terurut (numbered list).
+11. `<li>`: Mengelompokkan elemen-elemen dalam daftar.
+12. `<div>`: Mengelompokkan elemen HTML menjadi blok-blok terpisah.
+13. `<span>`: Memberikan gaya atau mengelompokkan elemen dalam konteks yang lebih kecil.
+14. `<table>`: Membuat tabel.
+15. `<tr>`: Mendefinisikan baris dalam tabel.
+16. `<td>`: Mendefinisikan sel dalam tabel.
+17. `<form>`: Membuat formulir interaktif.
+18. `<input>`: Membuat elemen input seperti teks, checkbox, radio button, dll.
+19. `<textarea>`: Membuat area teks yang lebih besar untuk input pengguna.
+20. `<button>`: Membuat tombol.
+21. `<select>`: Membuat dropdown list.
+22. `<option>`: Mendefinisikan pilihan dalam dropdown list.
+23. `<header>`: Mendefinisikan header dari sebuah dokumen atau bagian.
+24. `<nav>`: Mendefinisikan navigasi dalam sebuah dokumen atau bagian.
+25. `<article>`: Mendefinisikan konten independen yang dapat berdiri sendiri di dalam sebuah dokumen.
+26. `<section>`: Mendefinisikan bagian dalam sebuah dokumen.
+27. `<aside>`: Mendefinisikan konten yang berhubungan dengan konten sekitarnya, tetapi dapat berdiri sendiri.
+28. `<footer>`: Mendefinisikan footer dari sebuah dokumen atau bagian.
+29. `<video>`: Menyisipkan video dalam halaman web.
+30. `<audio>`: Menyisipkan audio dalam halaman web.
+31. `<canvas>`: Membuat area untuk menggambar grafis dengan menggunakan JavaScript.
+32. `<svg>`: Menyisipkan gambar vektor dalam halaman web.
+33. `<datalist>`: Membuat dropdown list dengan opsi yang telah ditentukan.
+34. `<progress>`: Menampilkan kemajuan dari sebuah tugas.
+35. `<meter>`: Menampilkan ukuran, tingkat, atau skala suatu nilai.
+
+Itulah beberapa tag HTML yang umum digunakan beserta beberapa tag HTML terbaru yang diperkenalkan dalam HTML5. Terdapat banyak lagi tag HTML lainnya, tetapi daftar ini member
+
+ikan gambaran tentang tag-tag yang sering digunakan dalam pengembangan web.

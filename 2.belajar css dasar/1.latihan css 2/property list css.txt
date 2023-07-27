@@ -1,0 +1,55 @@
+Berikut ini adalah daftar lengkap beberapa properti CSS yang dapat digunakan untuk mengatur tampilan teks:
+
+1. Font Properties:
+   - font-family: Menentukan jenis font yang akan digunakan.
+   - font-size: Menentukan ukuran font.
+   - font-weight: Menentukan ketebalan font.
+   - font-style: Menentukan gaya font (miring, tebal, normal, dst.).
+   - font-variant: Menentukan varian huruf (huruf kecil, huruf besar, dst.).
+
+2. Text Color Properties:
+   - color: Menentukan warna teks.
+   - opacity: Menentukan tingkat transparansi teks.
+
+3. Text Alignment Properties:
+   - text-align: Menentukan penataan teks (kiri, kanan, tengah, rata kanan-kiri).
+   - text-justify: Menentukan penyejajaran teks dalam paragraf.
+
+4. Text Decoration Properties:
+   - text-decoration: Menentukan dekorasi teks (garis bawah, garis tengah, garis atas, dst.).
+   - text-decoration-line: Menentukan jenis garis teks (garis bawah, garis tengah, dst.).
+   - text-decoration-color: Menentukan warna garis teks.
+   - text-decoration-style: Menentukan gaya garis teks (solid, dotted, dashed, dst.).
+   - text-decoration-thickness: Menentukan ketebalan garis teks.
+
+5. Text Transformation Properties:
+   - text-transform: Menentukan transformasi teks (huruf besar, huruf kecil, kapitalisasi kata, dst.).
+
+6. Text Spacing Properties:
+   - letter-spacing: Menentukan jarak antara huruf.
+   - word-spacing: Menentukan jarak antara kata.
+   - line-height: Menentukan tinggi baris teks.
+   - white-space: Menentukan cara teks memperlakukan spasi dan pemutusan baris.
+
+7. Text Shadow Properties:
+   - text-shadow: Menentukan bayangan teks (warna, jarak, dan ukuran bayangan).
+
+8. Text Overflow Properties:
+   - text-overflow: Menentukan cara teks yang terlalu panjang ditampilkan (ellipsis, clip, dst.).
+   - overflow-wrap: Menentukan pemutusan kata dalam teks yang terlalu panjang.
+
+9. Text Indentation Properties:
+   - text-indent: Menentukan indentasi awal paragraf.
+
+10. Vertical Text Properties:
+    - writing-mode: Menentukan arah penulisan teks (horisontal, vertikal, dst.).
+    - text-orientation: Menentukan orientasi teks (horizontal, vertical, dst.).
+
+11. Text Rendering Properties:
+    - text-rendering: Menentukan tingkat detail rendering teks (optimizeSpeed, optimizeLegibility, dst.).
+
+12. Text Break Properties:
+    - word-break: Menentukan cara teks dipisahkan jika melebihi lebar wadah.
+    - hyphens: Menentukan pemutusan kata secara otomatis pada teks panjang.
+
+Itu adalah beberapa properti CSS yang dapat Anda gunakan untuk mengatur tampilan teks dengan lebih detail. Perlu diingat bahwa beberapa properti mungkin memiliki dukungan yang berbeda di berbagai browser, jadi selalu pastikan untuk menguji dan memastikan konsistensi di berbagai platform.

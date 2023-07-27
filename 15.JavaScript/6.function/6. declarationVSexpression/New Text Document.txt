@@ -1,0 +1,80 @@
+**Function Declaration vs Function Expression**
+
+Dalam JavaScript, terdapat dua cara umum untuk membuat fungsi: Function Declaration (deklarasi fungsi) dan Function Expression (ekspresi fungsi). Kedua pendekatan ini memiliki perbedaan dalam cara penulisan dan perilaku fungsi. Berikut ini adalah penjelasan lebih rinci tentang keduanya:
+
+**1. Function Declaration (Deklarasi Fungsi)**
+Function Declaration adalah pendekatan yang umum digunakan untuk mendefinisikan fungsi di JavaScript. Dalam pendekatan ini, fungsi dideklarasikan menggunakan kata kunci `function` di awal blok kode.
+
+Contoh Function Declaration:
+```javascript
+function greet() {
+  console.log("Hello, world!");
+}
+
+greet();
+```
+
+Output:
+```
+Hello, world!
+```
+
+Dalam contoh di atas, `greet()` adalah Function Declaration yang didefinisikan dengan menggunakan kata kunci `function`. Fungsi tersebut dapat dipanggil di dalam kode setelah deklarasinya.
+
+**Karakteristik Function Declaration:**
+- Function Declaration dapat diakses dan dipanggil sebelum deklarasinya dalam kode.
+- Function Declaration akan di-"hoist" oleh JavaScript ke bagian atas lingkup atau blok yang mengandung deklarasinya. Artinya, Anda dapat memanggil fungsi sebelum deklarasinya dalam kode.
+
+**2. Function Expression (Ekspresi Fungsi)**
+Function Expression adalah pendekatan alternatif untuk mendefinisikan fungsi di JavaScript. Dalam pendekatan ini, fungsi didefinisikan sebagai ekspresi yang diberikan ke variabel.
+
+Contoh Function Expression:
+```javascript
+var greet = function() {
+  console.log("Hello, world!");
+};
+
+greet();
+```
+
+Output:
+```
+Hello, world!
+```
+
+Dalam contoh di atas, `greet` adalah variabel yang menampung ekspresi fungsi. Fungsi tersebut didefinisikan tanpa nama dan diatribusikan ke variabel `greet`. Kemudian, variabel tersebut dapat dipanggil sebagai fungsi.
+
+**Karakteristik Function Expression:**
+- Function Expression tidak dapat diakses atau dipanggil sebelum ekspresinya dalam kode.
+- Function Expression tidak di-"hoist" seperti Function Declaration. Oleh karena itu, Anda perlu mendefinisikan fungsi sebelum menggunakannya.
+
+**Perbedaan antara Function Declaration dan Function Expression:**
+- Function Declaration dideklarasikan dengan kata kunci `function` di awal blok kode, sedangkan Function Expression didefinisikan sebagai ekspresi yang diberikan ke variabel.
+- Function Declaration dapat diakses dan dipanggil sebelum deklarasinya dalam kode, sementara Function Expression tidak dapat diakses sebelum ekspresinya dalam kode.
+- Function Declaration di-"hoist" oleh JavaScript, sedangkan Function Expression tidak di-"hoist".
+
+**Implementasi Function Declaration dan Function Expression:**
+
+**Function Declaration:**
+```javascript
+// Function Declaration
+function greet() {
+  console.log("Hello, world!");
+}
+
+greet(); // Memanggil fungsi
+```
+
+**Function Expression:**
+```javascript
+// Function Expression
+var greet = function() {
+  console.log("Hello, world!");
+};
+
+greet(); // Memanggil fungsi
+```
+
+Perhatikan perbedaan penulisan dan penggunaan antara Function Declaration dan Function Expression. Anda dapat menggunakan pendekatan yang sesuai dengan ke
+
+butuhan dan preferensi Anda dalam mengembangkan kode JavaScript.

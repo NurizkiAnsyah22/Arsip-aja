@@ -1,0 +1,41 @@
+**Materi: Rekursi dalam JavaScript**
+
+Rekursi adalah konsep di mana sebuah fungsi dapat memanggil dirinya sendiri untuk menyelesaikan tugas atau mencapai hasil tertentu. Dalam JavaScript, rekursi sangat berguna dalam pemrograman yang melibatkan pemecahan masalah berulang atau struktur data yang berulang seperti pohon atau daftar terkait.
+
+Rekursi terdiri dari dua komponen utama:
+1. **Kasus dasar (base case)**: Ini adalah kondisi yang menentukan kapan rekursi harus berhenti. Kasus dasar biasanya merupakan kondisi di mana fungsi rekursif tidak lagi memanggil dirinya sendiri dan mengembalikan hasil akhir.
+2. **Kasus rekursif (recursive case)**: Ini adalah bagian dari fungsi rekursif di mana pemanggilan rekursif terjadi. Dalam kasus rekursif, fungsi memanggil dirinya sendiri dengan argumen yang berbeda dan terus memanggil dirinya hingga mencapai kasus dasar.
+
+**Contoh Implementasi: Faktorial**
+
+Faktorial adalah contoh klasik dari penggunaan rekursi. Faktorial dari sebuah bilangan bulat positif n (ditulis sebagai n!) adalah hasil perkalian semua bilangan bulat positif dari 1 hingga n.
+
+Berikut adalah implementasi fungsi rekursif untuk menghitung faktorial dalam JavaScript:
+
+```javascript
+function factorial(n) {
+  // Kasus dasar: faktorial dari 0 atau 1 adalah 1
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  
+  // Kasus rekursif: faktorial dari n adalah n dikalikan dengan faktorial dari (n-1)
+  return n * factorial(n - 1);
+}
+
+// Contoh penggunaan:
+console.log(factorial(5)); // Output: 120
+```
+
+Dalam contoh di atas, fungsi `factorial` mengambil parameter `n` yang merupakan bilangan bulat positif yang akan dihitung faktorialnya. Fungsi tersebut memiliki kasus dasar di mana jika `n` adalah 0 atau 1, maka akan mengembalikan 1 (karena faktorial dari 0 atau 1 adalah 1). Jika `n` lebih besar dari 1, maka akan mengembalikan hasil perkalian antara `n` dengan panggilan rekursif fungsi `factorial` dengan argumen `n-1`.
+
+Dalam contoh penggunaan, kita mencetak hasil faktorial dari 5, yaitu 120.
+
+**Catatan Penting:**
+- Penting untuk memastikan bahwa setiap panggilan rekursif dalam fungsi memiliki kemungkinan untuk mencapai kasus dasar. Jika tidak, fungsi akan terus memanggil dirinya sendiri dalam lingkaran tak terbatas (rekursi tak terbatas) dan menyebabkan *stack overflow*.
+- Jika tidak ada kasus dasar yang tepat atau kasus rekursif tidak ditentukan dengan benar, rekursi dapat menyebabkan program menjadi tidak efisien dan bahkan menyebabkan *stack overflow*.
+- Rekursi juga dapat digunakan dalam implementasi lain seperti penjelajahan struktur data berulang seperti pohon atau daftar terkait.
+
+Demikianlah pen
+
+jelasan singkat tentang rekursi dalam JavaScript dan implementasinya dalam contoh faktorial. Anda dapat menggali lebih dalam konsep rekursi untuk menerapkannya dalam situasi pemrograman yang lebih kompleks.

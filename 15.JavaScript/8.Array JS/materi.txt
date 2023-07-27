@@ -1,0 +1,111 @@
+**Array di JavaScript**
+
+Array adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel. Di JavaScript, array adalah objek yang terdiri dari sejumlah elemen yang diindeks berdasarkan posisi mereka. Array digunakan secara luas dalam pemrograman JavaScript karena fleksibilitas dan kemampuannya dalam mengelola sekumpulan nilai.
+
+**Membuat Array**
+Anda dapat membuat array di JavaScript dengan menggunakan tanda kurung siku (`[]`) dan memasukkan nilai-nilai ke dalamnya.
+
+Contoh:
+```javascript
+var fruits = ['apple', 'banana', 'orange'];
+```
+
+Di contoh di atas, array `fruits` berisi tiga elemen: `'apple'`, `'banana'`, dan `'orange'`.
+
+**Mengakses Elemen Array**
+Anda dapat mengakses elemen-elemen dalam array dengan menggunakan indeksnya. Indeks dimulai dari 0 untuk elemen pertama, 1 untuk elemen kedua, dan seterusnya.
+
+Contoh:
+```javascript
+console.log(fruits[0]); // Output: 'apple'
+console.log(fruits[1]); // Output: 'banana'
+console.log(fruits[2]); // Output: 'orange'
+```
+
+**Mengubah Elemen Array**
+Anda dapat mengubah nilai elemen dalam array dengan menetapkan nilai baru menggunakan indeksnya.
+
+Contoh:
+```javascript
+fruits[1] = 'grape';
+console.log(fruits); // Output: ['apple', 'grape', 'orange']
+```
+
+**Menambahkan Elemen ke Array**
+Anda dapat menambahkan elemen baru ke array dengan menggunakan metode `push()`.
+
+Contoh:
+```javascript
+fruits.push('mango');
+console.log(fruits); // Output: ['apple', 'grape', 'orange', 'mango']
+```
+
+**Menghapus Elemen dari Array**
+Anda dapat menghapus elemen dari array menggunakan beberapa metode, seperti `pop()`, `shift()`, atau `splice()`.
+
+Contoh menggunakan `pop()`:
+```javascript
+fruits.pop();
+console.log(fruits); // Output: ['apple', 'grape', 'orange']
+```
+
+Contoh menggunakan `shift()`:
+```javascript
+fruits.shift();
+console.log(fruits); // Output: ['grape', 'orange']
+```
+
+**Iterasi melalui Array**
+Anda dapat mengiterasi melalui elemen-elemen array menggunakan loop, seperti `for` atau `forEach()`.
+
+Contoh dengan `for` loop:
+```javascript
+for (var i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+```
+
+Contoh dengan `forEach()`:
+```javascript
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+```
+
+**Contoh Implementasi**
+
+Berikut ini adalah contoh implementasi array dalam sebuah kode:
+
+```javascript
+var fruits = ['apple', 'banana', 'orange'];
+
+console.log(fruits[0]); // Output: 'apple'
+
+fruits[1] = 'grape';
+console.log(fruits); // Output: ['apple', 'grape', 'orange']
+
+fruits.push('mango');
+console.log(fruits); // Output: ['apple', 'grape', 'orange', 'mango']
+
+fruits.pop();
+console.log(fruits); // Output: ['apple', 'grape', 'orange']
+
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+```
+
+Output:
+```
+apple
+['apple', 'grape', 'orange']
+['apple', 'grape', 'orange',
+
+ 'mango']
+['apple', 'grape', 'orange']
+apple
+grape
+orange
+```
+
+Dalam contoh di atas, array `fruits` digunakan untuk menyimpan buah-buahan. Berbagai operasi seperti mengakses, mengubah, menambahkan, dan menghapus elemen-elemen array dilakukan dengan menggunakan metode dan sintaksis yang sesuai. Kemudian, menggunakan loop `forEach()`, setiap elemen array diiterasi dan dicetak ke konsol.

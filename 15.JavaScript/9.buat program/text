@@ -1,0 +1,33 @@
+// // tambah penumpang ()
+// - nama pengumpang
+//     - array pengumpang
+
+//     - rules :
+//     jika angkot kosong, penumpang naik duduk di kursi utama
+//     penumpang berikutnya duduk dikursi selanjutnya secara berurutan
+//     jika ada kursi kosong(karena penumpang turun), penumpang yang naik berikutnya duduk di kursi kosong terlebih dahulu
+//     asumsi kursi tidak akan penuh dan akan bertambah terus jika ada penumpang yang akan naik
+//     nama penumpang tidak boleh sama, untuk menghindari kebingungan.
+
+var penumpang = [];
+var tambahPenumpang = function (namaPenumpang, penumpang) {
+  
+  if (penumpang.length == 0) {
+  //tambah penumpang di awal array
+      
+  //kembalikan isi array dan keluar dari funciton
+}
+
+  //else
+
+  //terlurusi seluruh kursi dari awal
+  //jika ada kursi kosong
+  //tambah penumpang di kursi tersebut
+  //kembalikan isi array dan keluar dari funtion
+  //jika sudah ada nama yang sama
+  //tampilkan pesan kesalahnya
+  //kembalikan isi array dan keluar dari function
+  //jika seluruh kursi terisi
+  //tambah penumpang di akhir array
+  //kembalikan isi array dan keluar dari function
+};

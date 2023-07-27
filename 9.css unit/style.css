@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em;
+}
+
+header {
+    background-color: aliceblue;
+    background-image: url(img/1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+h1 {
+    /* font-size: 4rem; */
+    /* font-size: 4vw; */
+    font-size: 4vmax;
+    line-height: 1.2em;
+    color: azure;
+    text-shadow: 1px 1px 5pc rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: auto;
+}
+section {
+    margin: 30px auto;
+    width: 80%;
+}

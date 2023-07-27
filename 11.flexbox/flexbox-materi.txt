@@ -1,0 +1,108 @@
+Flexbox adalah salah satu fitur CSS yang digunakan untuk mengatur tata letak elemen-elemen dalam suatu kontainer. Dengan menggunakan flexbox, kita dapat dengan mudah mengatur tata letak elemen-elemen dalam satu dimensi (baris atau kolom) maupun dalam dua dimensi (baris dan kolom).
+
+Berikut ini adalah materi lengkap mengenai flexbox:
+
+1. Kontainer dan Item Flexbox
+   - Untuk menggunakan flexbox, kita perlu membuat kontainer flex dengan mengatur properti `display` pada elemen tersebut menjadi `flex` atau `inline-flex`.
+   - Elemen-elemen di dalam kontainer flex disebut sebagai item flex.
+
+Contoh:
+```css
+.container {
+  display: flex;
+}
+```
+
+2. Arah Tata Letak (Flex Direction)
+   - Properti `flex-direction` digunakan untuk mengatur arah tata letak elemen-elemen dalam kontainer flex.
+   - Nilai yang dapat digunakan antara lain: `row` (default), `row-reverse`, `column`, `column-reverse`.
+
+Contoh:
+```css
+.container {
+  flex-direction: row;
+}
+```
+
+3. Perataan Item (Justify Content)
+   - Properti `justify-content` digunakan untuk mengatur perataan item flex dalam arah utama (main axis).
+   - Nilai yang dapat digunakan antara lain: `flex-start` (default), `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`.
+
+Contoh:
+```css
+.container {
+  justify-content: center;
+}
+```
+
+4. Perataan Silang (Align Items)
+   - Properti `align-items` digunakan untuk mengatur perataan item flex dalam arah silang (cross axis).
+   - Nilai yang dapat digunakan antara lain: `stretch` (default), `flex-start`, `flex-end`, `center`, `baseline`.
+
+Contoh:
+```css
+.container {
+  align-items: center;
+}
+```
+
+5. Urutan Item (Order)
+   - Properti `order` digunakan untuk mengatur urutan tampilan item flex dalam kontainer.
+   - Nilai yang dapat digunakan adalah bilangan bulat positif atau negatif.
+
+Contoh:
+```css
+.item {
+  order: 1;
+}
+```
+
+6. Ukuran Item (Flex Grow, Flex Shrink, Flex Basis)
+   - Properti `flex` merupakan singkatan dari `flex-grow`, `flex-shrink`, dan `flex-basis`.
+   - Properti `flex-grow` digunakan untuk mengatur seberapa banyak ruang ekstra yang akan digunakan oleh item flex.
+   - Properti `flex-shrink` digunakan untuk mengatur seberapa banyak ruang yang akan dikurangi dari item flex jika tidak cukup ruang.
+   - Properti `flex-basis` digunakan untuk mengatur ukuran awal item flex sebelum ditentukan seberapa banyak ruang yang tersedia.
+
+Contoh:
+```css
+.item {
+  flex: 1 0 200px;
+}
+```
+
+7. Perataan Silang Item (Align Self)
+   - Properti `align-self` digunakan untuk mengatur perataan item flex secara individual, mengganti pengaturan `align-items` di level kontainer.
+   - Nilai yang dapat digunakan sama seperti `align-items`.
+
+Contoh:
+```css
+.item {
+  align-self: flex-start;
+}
+```
+
+8. Pembungkus Fleksibel (Flex Wrap)
+   - Properti `flex-wrap` digunakan untuk meng
+
+atur apakah item-item flex dapat melintasi satu baris atau dibungkus ke baris baru.
+   - Nilai yang dapat digunakan antara lain: `nowrap` (default), `wrap`, `wrap-reverse`.
+
+Contoh:
+```css
+.container {
+  flex-wrap: wrap;
+}
+```
+
+9. Tatanan Silang (Align Content)
+   - Properti `align-content` digunakan untuk mengatur tatanan baris dalam kontainer flex jika terdapat beberapa baris.
+   - Nilai yang dapat digunakan antara lain: `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `stretch`.
+
+Contoh:
+```css
+.container {
+  align-content: center;
+}
+```
+
+Itulah materi lengkap mengenai flexbox. Dengan menggunakan flexbox, kita dapat mengatur tata letak elemen dengan lebih fleksibel dan responsif.

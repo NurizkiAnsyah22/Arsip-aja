@@ -1,0 +1,103 @@
+Materi: Built-in Function di JavaScript dan Implementasinya
+
+Built-in functions (fungsi bawaan) adalah fungsi yang sudah tersedia secara default dalam JavaScript. Mereka disediakan oleh bahasa itu sendiri atau oleh objek bawaan seperti String, Array, Math, dll. Dalam materi ini, kita akan membahas secara lengkap tentang beberapa built-in functions di JavaScript, termasuk definisi, sintaks, dan contoh implementasinya.
+
+Berikut adalah beberapa built-in functions yang sering digunakan di JavaScript:
+
+1. parseInt():
+   - Definisi: Mengubah string menjadi bilangan bulat.
+   - Sintaks: `parseInt(string, radix)`
+   - Contoh:
+     ```javascript
+     let angka = parseInt("10");
+     console.log(angka); // Output: 10
+     ```
+
+2. parseFloat():
+   - Definisi: Mengubah string menjadi bilangan desimal.
+   - Sintaks: `parseFloat(string)`
+   - Contoh:
+     ```javascript
+     let angka = parseFloat("3.14");
+     console.log(angka); // Output: 3.14
+     ```
+
+3. String():
+   - Definisi: Mengubah tipe data apapun menjadi tipe data string.
+   - Sintaks: `String(nilai)`
+   - Contoh:
+     ```javascript
+     let angka = 10;
+     let teks = String(angka);
+     console.log(teks); // Output: "10"
+     ```
+
+4. isNaN():
+   - Definisi: Memeriksa apakah suatu nilai adalah NaN (Not-a-Number).
+   - Sintaks: `isNaN(nilai)`
+   - Contoh:
+     ```javascript
+     console.log(isNaN(10)); // Output: false
+     console.log(isNaN("abc")); // Output: true
+     ```
+
+5. Math.random():
+   - Definisi: Menghasilkan angka acak antara 0 (inklusif) dan 1 (eksklusif).
+   - Sintaks: `Math.random()`
+   - Contoh:
+     ```javascript
+     let angkaAcak = Math.random();
+     console.log(angkaAcak); // Output: angka acak antara 0 dan 1
+     ```
+
+6. Math.round():
+   - Definisi: Membulatkan angka ke bilangan bulat terdekat.
+   - Sintaks: `Math.round(angka)`
+   - Contoh:
+     ```javascript
+     console.log(Math.round(3.6)); // Output: 4
+     console.log(Math.round(2.1)); // Output: 2
+     ```
+
+7. Array.length:
+   - Definisi: Mengembalikan jumlah elemen dalam array.
+   - Sintaks: `array.length`
+   - Contoh:
+     ```javascript
+     let arr = [1, 2, 3, 4, 5];
+     console.log(arr.length); // Output: 5
+     ```
+
+8. Array.push():
+   - Definisi: Menambahkan satu atau lebih elemen ke akhir array.
+   - Sintaks: `array.push(elemen1, elemen2, ...)`
+   - Contoh:
+     ```javascript
+     let arr = [1, 2, 3];
+     arr.push(4, 5);
+     console.log(arr); // Output: [1, 2, 3, 4, 5]
+     ```
+
+9. String.toUpperCase():
+   - Definisi: Mengubah string menjadi huruf kapital.
+
+
+   - Sintaks: `string.toUpperCase()`
+   - Contoh:
+     ```javascript
+     let teks = "hello world";
+     let kapital = teks.toUpperCase();
+     console.log(kapital); // Output: "HELLO WORLD"
+     ```
+
+10. String.includes():
+    - Definisi: Memeriksa apakah sebuah string berisi substring tertentu.
+    - Sintaks: `string.includes(substring)`
+    - Contoh:
+      ```javascript
+      let teks = "Halo, selamat datang!";
+      console.log(teks.includes("selamat")); // Output: true
+      console.log(teks.includes("goodbye")); // Output: false
+      ```
+
+Itulah beberapa contoh built-in functions yang sering digunakan di JavaScript beserta implementasinya. Fungsi-fungsi ini dapat membantu Anda dalam berbagai tugas pemrograman seperti manipulasi string, operasi matematika, manipulasi array, dan lainnya.

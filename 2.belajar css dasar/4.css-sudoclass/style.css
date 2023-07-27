@@ -1,0 +1,47 @@
+/* contoh penggunaan link, active,hover,visited, */
+
+.hello:link {
+    color: brown;
+}
+
+.hello:hover {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
+    font-size: 25px;
+}
+
+.hello:active {
+    font-style: italic;
+}
+
+.hello:visited {
+    color: greenyellow;
+}
+
+/*kita buat child / anak dari element */
+
+li:first-child a {
+    color: gold;
+
+}
+li:last-child a {
+    color: lightskyblue;
+}
+
+li:nth-child(3) a {
+    color: peru;
+}
+li:nth-child(odd) a:hover {
+    color:steelblue;
+}
+
+/* untuk paragraf gabisa pake firs-child*/
+
+p:first-of-type {
+    color: brown;
+}
+
+p:last-of-type {
+    color:blue
+}
+

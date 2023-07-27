@@ -1,0 +1,86 @@
+Materi DOM (Document Object Model) Selection membahas cara-cara untuk memilih dan memanipulasi elemen-elemen HTML menggunakan JavaScript. Dalam pemrograman web, DOM digunakan untuk merepresentasikan struktur halaman web sebagai pohon objek, di mana setiap elemen HTML merupakan objek yang dapat diakses dan dimanipulasi menggunakan JavaScript.
+
+Berikut ini adalah penjelasan lengkap dan implementasi DOM Selection:
+
+1. Metode-Metode DOM Selection:
+   - getElementById: Metode ini digunakan untuk memilih elemen berdasarkan nilai atribut "id" yang unik pada elemen tersebut. Contoh penggunaan:
+     ```javascript
+     var elem = document.getElementById("myElement");
+     ```
+
+   - getElementsByClassName: Metode ini digunakan untuk memilih elemen berdasarkan nilai atribut "class" pada elemen tersebut. Metode ini mengembalikan koleksi HTMLCollection yang berisi elemen-elemen yang sesuai. Contoh penggunaan:
+     ```javascript
+     var elems = document.getElementsByClassName("myClass");
+     ```
+
+   - getElementsByTagName: Metode ini digunakan untuk memilih elemen berdasarkan nama tag HTML. Metode ini mengembalikan koleksi HTMLCollection yang berisi elemen-elemen yang sesuai. Contoh penggunaan:
+     ```javascript
+     var elems = document.getElementsByTagName("div");
+     ```
+
+   - querySelector: Metode ini menggunakan sintaks CSS selector untuk memilih elemen pertama yang cocok dengan selector yang diberikan. Contoh penggunaan:
+     ```javascript
+     var elem = document.querySelector("#myElement .myClass");
+     ```
+
+   - querySelectorAll: Metode ini menggunakan sintaks CSS selector untuk memilih semua elemen yang cocok dengan selector yang diberikan. Metode ini mengembalikan koleksi NodeList yang berisi elemen-elemen yang sesuai. Contoh penggunaan:
+     ```javascript
+     var elems = document.querySelectorAll("div.myClass");
+     ```
+
+2. Manipulasi Elemen DOM:
+   Setelah memilih elemen-elemen menggunakan metode DOM selection, Anda dapat melakukan berbagai manipulasi pada elemen-elemen tersebut, seperti mengubah konten, atribut, atau gaya elemen.
+
+   - Mengubah konten elemen: Anda dapat mengubah konten elemen menggunakan properti innerHTML atau textContent. Contoh penggunaan:
+     ```javascript
+     elem.innerHTML = "Halo, dunia!"; // mengubah konten elemen dengan HTML
+     elem.textContent = "Halo, dunia!"; // mengubah konten elemen sebagai teks biasa
+     ```
+
+   - Mengubah atribut elemen: Anda dapat mengubah nilai atribut elemen menggunakan properti elemen tersebut. Contoh penggunaan:
+     ```javascript
+     elem.src = "gambar-baru.jpg"; // mengubah nilai atribut "src" pada elemen gambar
+     elem.href = "https://www.example.com"; // mengubah nilai atribut "href" pada elemen tautan
+     ```
+
+   - Mengubah gaya elemen: Anda dapat mengubah gaya elemen menggunakan properti style. Contoh penggunaan:
+     ```javascript
+     elem.style.color = "red"; // mengubah warna teks elemen menjadi merah
+     elem.style.fontSize = "20px"; // mengubah ukuran teks elemen menjadi 20 piksel
+     ```
+
+   - Menambahkan dan menghapus kelas elemen: Anda dapat menambahkan kelas pada elem
+
+en menggunakan metode classList.add() dan menghapus kelas menggunakan metode classList.remove(). Contoh penggunaan:
+     ```javascript
+     elem.classList.add("highlight"); // menambahkan kelas "highlight" pada elemen
+     elem.classList.remove("highlight"); // menghapus kelas "highlight" dari elemen
+     ```
+
+Implementasi DOM Selection dan manipulasi elemen dapat dilakukan di dalam tag `<script>` pada halaman HTML atau dalam file JavaScript terpisah yang dihubungkan dengan halaman HTML menggunakan tag `<script>` juga. Pastikan untuk menempatkan kode JavaScript setelah elemen yang ingin Anda pilih atau manipulasi, atau setelah dokumen selesai dimuat dengan menggunakan event "DOMContentLoaded".
+
+Berikut adalah contoh implementasi sederhana yang menggunakan metode DOM selection untuk memilih elemen berdasarkan ID dan mengubah kontennya:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh DOM Selection</title>
+</head>
+<body>
+  <h1 id="myHeading">Judul</h1>
+  
+  <script>
+    // Memilih elemen berdasarkan ID
+    var heading = document.getElementById("myHeading");
+
+    // Mengubah konten elemen
+    heading.textContent = "Halo, dunia!";
+  </script>
+</body>
+</html>
+```
+
+Dalam contoh di atas, elemen dengan ID "myHeading" dipilih menggunakan metode `getElementById`, kemudian kontennya diubah menjadi "Halo, dunia!" menggunakan properti `textContent`.
+
+Anda dapat menggabungkan berbagai metode DOM selection dan manipulasi elemen untuk mencapai efek yang diinginkan. Penting untuk memahami bahwa ini hanya pengenalan singkat, dan DOM Selection memiliki lebih banyak fungsionalitas yang bisa dieksplorasi.

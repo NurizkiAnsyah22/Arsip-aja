@@ -1,0 +1,54 @@
+Berikut adalah beberapa value yang umum digunakan untuk properti dimensi (width, height) dalam CSS beserta penjelasan singkatnya:
+
+1. Nilai absolut (px, pt, cm, mm, in, pc): Nilai absolut digunakan untuk menetapkan dimensi dengan satuan tetap seperti piksel (px), poin (pt), sentimeter (cm), milimeter (mm), inci (in), dan pica (pc).
+
+   Contoh penggunaan:
+   ```css
+   .element {
+     width: 300px;
+     height: 200px;
+   }
+   ```
+
+2. Nilai relatif (%, em, rem, vw, vh): Nilai relatif digunakan untuk menetapkan dimensi yang berkaitan dengan elemen lain atau ukuran viewport.
+
+   - Persentase (%): Menetapkan dimensi berdasarkan persentase dari dimensi elemen induk atau elemen lain.
+   - em: Menetapkan dimensi berdasarkan ukuran font elemen terkait.
+   - rem: Menetapkan dimensi berdasarkan ukuran font elemen root (root element).
+   - vw (viewport width): Menetapkan dimensi berdasarkan lebar viewport.
+   - vh (viewport height): Menetapkan dimensi berdasarkan tinggi viewport.
+
+   Contoh penggunaan:
+   ```css
+   .parent {
+     width: 80%;
+     height: 10em;
+   }
+
+   .child {
+     width: 50vw;
+     height: 30vh;
+   }
+   ```
+
+3. Nilai auto: Nilai auto digunakan untuk mengizinkan browser menghitung dimensi elemen secara otomatis berdasarkan kontennya atau perilaku default browser.
+
+   Contoh penggunaan:
+   ```css
+   .element {
+     width: auto;
+     height: auto;
+   }
+   ```
+
+4. Nilai initial: Nilai initial digunakan untuk mengembalikan dimensi elemen ke nilai awal atau nilai default yang ditentukan oleh browser.
+
+   Contoh penggunaan:
+   ```css
+   .element {
+     width: initial;
+     height: initial;
+   }
+   ```
+
+Perlu dicatat bahwa contoh-contoh di atas hanya untuk ilustrasi, dan Anda dapat menyesuaikan nilai dimensi sesuai dengan kebutuhan desain Anda.

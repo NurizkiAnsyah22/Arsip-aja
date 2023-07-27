@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+</head>
+
+<style>
+    body {
+        height: 1000px;
+
+    }
+
+    .iklan {
+        background-color: black;
+        position: fixed;
+        top: 100px;
+        bottom:100px;
+        left: 100px;
+        right:100px;
+        z-index: 99999;
+        opacity: 0.6;
+    }
+    .close {
+        width: 30px;
+        height: 30px;
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 3px solid black;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        font-style: italic;
+        position: absolute;
+        top:-15px;
+        right: 0;
+        border-radius: 50%;
+    }
+    .top-bar {
+        height: 40px;
+        width: 100%;
+        position: fixed;
+        top:0;
+        top: 0;
+        background-color: blue;
+        z-index: 9999;
+    }
+
+    .container{
+        width: 450px;
+        height: 450px;
+        border: 5px solid black;
+        margin: 50px auto;
+        position: relative;
+    }
+    .kotak1, .kotak2, .kotak3 {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        position: absolute;
+    }
+    .kotak1 {
+        background-color: red;
+        z-index: 1;
+        
+    }
+    .kotak2 {
+        background-color: blue;
+        top: 75px;
+        left: 75px;
+        z-index: 2;
+         
+        
+    }
+    .kotak3 {
+        background-color: yellow;
+        top: 150px;
+        left: 150px;
+        z-index: 2;
+    }
+</style>
+<body>
+    
+
+    <div class="container">
+
+        <div class="kotak1"></div>
+        <div class="kotak2"></div>
+        <div class="kotak3"></div>
+    </div>
+    <div class="top-bar"></div>
+
+    <div class="iklan">
+        <div class="close">X</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+DOM Events adalah mekanisme yang memungkinkan JavaScript untuk merespons interaksi pengguna dengan elemen-elemen di dalam halaman web. Dengan menggunakan DOM Events, Anda dapat menangani berbagai peristiwa, seperti mengklik tombol, memasukkan data ke dalam formulir, atau menavigasi halaman.
+
+Berikut adalah beberapa contoh DOM Events yang umum:
+
+1. Event Mouse:
+   - `click`: Terpicu saat pengguna mengklik elemen.
+   - `mouseover`: Terpicu saat kursor masuk ke dalam elemen.
+   - `mouseout`: Terpicu saat kursor keluar dari elemen.
+   - `mousedown`: Terpicu saat pengguna menekan tombol mouse di atas elemen.
+   - `mouseup`: Terpicu saat pengguna melepaskan tombol mouse setelah menekannya di atas elemen.
+
+2. Event Keyboard:
+   - `keydown`: Terpicu saat pengguna menekan tombol pada keyboard.
+   - `keyup`: Terpicu saat pengguna melepaskan tombol pada keyboard.
+   - `keypress`: Terpicu saat pengguna menekan dan melepaskan tombol pada keyboard.
+
+3. Event Form:
+   - `submit`: Terpicu saat pengguna mengirim formulir.
+   - `input`: Terpicu saat nilai dalam elemen input berubah.
+
+4. Event Window:
+   - `load`: Terpicu saat halaman selesai dimuat.
+   - `resize`: Terpicu saat jendela browser diubah ukurannya.
+   - `scroll`: Terpicu saat pengguna menggulir halaman.
+
+Untuk menangani event, Anda dapat menggunakan metode `addEventListener()` pada elemen yang ingin Anda tangani event-nya. Berikut adalah contoh implementasi penggunaan DOM Events:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Events</title>
+</head>
+<body>
+    <button id="myButton">Click me!</button>
+
+    <script>
+        // Mengambil referensi elemen button
+        var button = document.getElementById("myButton");
+
+        // Menambahkan event listener untuk event "click"
+        button.addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+
+        // Menambahkan event listener untuk event "mouseover"
+        button.addEventListener("mouseover", function() {
+            button.style.backgroundColor = "red";
+        });
+
+        // Menambahkan event listener untuk event "mouseout"
+        button.addEventListener("mouseout", function() {
+            button.style.backgroundColor = "";
+        });
+    </script>
+</body>
+</html>
+```
+
+Pada contoh di atas, kami menambahkan event listener menggunakan metode `addEventListener()` pada elemen button. Ketika button diklik, akan muncul sebuah pesan. Ketika kursor masuk ke button, warna latar belakangnya akan berubah menjadi merah, dan ketika kursor keluar, warna latar belakangnya akan kembali seperti semula.
+
+Anda dapat menggabungkan event listener dengan logika JavaScript yang lebih kompleks untuk membuat respons yang lebih interaktif terhadap interaksi pengguna di halaman web Anda.

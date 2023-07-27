@@ -1,0 +1,23 @@
+DOM (Document Object Model) merupakan sebuah representasi struktur dokumen HTML/XML dalam bentuk objek yang dapat diakses dan dimanipulasi menggunakan JavaScript. DOM memungkinkan pengembang web untuk mengubah isi, gaya, dan perilaku halaman web secara dinamis.
+
+Secara lengkap, berikut adalah definisi DOM JavaScript:
+
+DOM (Document Object Model) adalah sebuah API (Application Programming Interface) yang disediakan oleh browser web untuk memanipulasi struktur dokumen HTML atau XML. DOM merepresentasikan dokumen sebagai sebuah pohon objek, di mana setiap elemen dalam dokumen direpresentasikan sebagai objek, dan objek-objek tersebut membentuk hierarki berdasarkan hubungan orang tua-anak antara elemen-elemen tersebut.
+
+Dalam DOM, dokumen utama diwakili oleh objek "document". Objek ini menyediakan metode dan properti untuk mengakses dan memanipulasi elemen-elemen di dalam dokumen. Selain itu, setiap elemen di dalam dokumen juga direpresentasikan sebagai objek dengan metode dan properti yang berkaitan.
+
+Dengan menggunakan DOM, Anda dapat melakukan berbagai tindakan, antara lain:
+
+1. Mengakses elemen: Anda dapat menggunakan metode seperti getElementById, getElementsByTagName, atau querySelector untuk mengakses elemen-elemen dalam dokumen berdasarkan id, tag, atau selektor CSS.
+
+2. Memanipulasi isi elemen: Anda dapat mengubah teks atau HTML dalam elemen menggunakan properti seperti innerHTML atau textContent.
+
+3. Menambahkan atau menghapus elemen: Anda dapat membuat elemen baru menggunakan metode createElement, dan menambahkannya ke dalam dokumen menggunakan metode seperti appendChild atau insertBefore. Anda juga dapat menghapus elemen menggunakan metode removeChild.
+
+4. Memanipulasi atribut elemen: Anda dapat mengubah atau mengakses atribut elemen menggunakan properti seperti getAttribute, setAttribute, atau removeAttribute.
+
+5. Menangani peristiwa: Anda dapat menambahkan event listener ke elemen-elemen menggunakan metode addEventListener, sehingga Anda dapat merespons aksi pengguna seperti klik atau input.
+
+DOM JavaScript memiliki banyak lagi metode dan properti yang dapat Anda gunakan untuk memanipulasi halaman web. Dengan DOM, Anda dapat membuat halaman web menjadi interaktif, mengubah tampilan dan perilaku halaman secara dinamis, serta berinteraksi dengan pengguna melalui peristiwa.
+
+Semoga penjelasan ini membantu Anda memahami DOM JavaScript secara lengkap. Jika Anda memiliki pertanyaan lebih lanjut, jangan ragu untuk bertanya.

@@ -1,0 +1,71 @@
+Materi: Fetch API dalam JavaScript
+
+Pengantar:
+Fetch API adalah API bawaan dalam JavaScript yang digunakan untuk mengambil atau mengirim data melalui jaringan. Ini menyediakan metode yang mudah digunakan untuk mengambil sumber daya dari URL atau endpoint tertentu dengan menggunakan permintaan HTTP seperti GET, POST, PUT, DELETE, dll. Fetch API beroperasi dengan menggunakan Promise, yang memungkinkan penanganan respons asinkron.
+
+Berikut adalah langkah-langkah dan contoh implementasi Fetch API dalam JavaScript:
+
+Langkah 1: Membuat permintaan
+
+Untuk membuat permintaan menggunakan Fetch API, Anda perlu menggunakan fungsi global `fetch()`. Anda perlu memberikan URL atau endpoint yang ingin Anda akses sebagai argumen. Fungsi ini mengembalikan Promise yang menjanjikan respons.
+
+Contoh:
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    // Lakukan sesuatu dengan respons
+  })
+  .catch(error => {
+    // Tangani kesalahan jika ada
+  });
+```
+
+Langkah 2: Mengelola respons
+
+Setelah permintaan berhasil dikirim, Anda dapat mengelola respons yang diterima dari server. Respons ini berupa objek `Response`.
+
+Contoh:
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (response.ok) {
+      return response.json(); // Mengubah respons menjadi JSON
+    } else {
+      throw new Error('Terjadi kesalahan dalam permintaan.');
+    }
+  })
+  .then(data => {
+    // Lakukan sesuatu dengan data yang diterima
+  })
+  .catch(error => {
+    // Tangani kesalahan jika ada
+  });
+```
+
+Langkah 3: Menggunakan metode HTTP
+
+Fetch API mendukung berbagai metode HTTP seperti GET, POST, PUT, DELETE, dll. Untuk menggunakan metode tertentu, Anda perlu menentukan opsi dalam objek pengaturan (options) yang melewati argumen kedua ke fungsi `fetch()`.
+
+Contoh: Menggunakan metode POST untuk mengirim data ke server
+```javascript
+const data = {
+  username: 'john_doe',
+  password: 'password123'
+};
+
+fetch('https://api.example.com/login', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
+})
+  .then(response => {
+    // Lakukan sesuatu dengan respons
+  })
+  .catch(error => {
+    // Tangani kesalahan jika ada
+  });
+```
+
+Itulah langkah-langkah dasar dan contoh implementasi Fetch API dalam JavaScript. Dengan menggunakan Fetch API, Anda dapat mengambil atau mengirim data melalui jaringan dengan cara yang sederhana dan efisien.

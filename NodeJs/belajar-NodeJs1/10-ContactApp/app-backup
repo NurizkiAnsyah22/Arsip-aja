@@ -1,0 +1,16 @@
+//mengambil argument dari command line
+
+// console.log(process.argv);
+const yargs = require("yargs");
+console.log(yargs.argv);
+
+// const contacts = require("./contacts");
+
+// const main = async () => {
+//   const nama = await contacts.tulisPertanyaan("masukan nama anda :");
+//   const email = await contacts.tulisPertanyaan("masukan email anda : ");
+//   const noHp = await contacts.tulisPertanyaan("masukan Nomor anda : ");
+
+//   contacts.simpanContact(nama, email, noHp);
+// };
+// main();

@@ -1,0 +1,56 @@
+Berikut adalah daftar pseudo-class (kelas semu) dalam HTML secara lengkap:
+
+1. :active: Digunakan untuk menggambarkan keadaan aktif saat elemen sedang ditekan oleh pengguna.
+Contoh penggunaan: a:active { color: red; }
+
+2. :hover: Digunakan untuk menggambarkan keadaan saat pointer mouse berada di atas elemen.
+Contoh penggunaan: a:hover { text-decoration: underline; }
+
+3. :focus: Digunakan untuk menggambarkan keadaan saat elemen mendapatkan fokus.
+Contoh penggunaan: input:focus { border: 2px solid blue; }
+
+4. :visited: Digunakan untuk menggambarkan keadaan saat tautan telah dikunjungi oleh pengguna.
+Contoh penggunaan: a:visited { color: purple; }
+
+5. :link: Digunakan untuk menggambarkan keadaan saat tautan belum dikunjungi.
+Contoh penggunaan: a:link { color: blue; }
+
+6. :first-child: Digunakan untuk memilih elemen yang merupakan elemen pertama dalam konteks orang tua mereka.
+Contoh penggunaan: ul li:first-child { font-weight: bold; }
+
+7. :last-child: Digunakan untuk memilih elemen yang merupakan elemen terakhir dalam konteks orang tua mereka.
+Contoh penggunaan: ul li:last-child { font-style: italic; }
+
+8. :nth-child(n): Digunakan untuk memilih elemen yang merupakan anak ke-n dalam konteks orang tua mereka.
+Contoh penggunaan: ul li:nth-child(2n) { background-color: #f2f2f2; }
+
+9. :nth-last-child(n): Digunakan untuk memilih elemen yang merupakan anak ke-n dari belakang dalam konteks orang tua mereka.
+Contoh penggunaan: ul li:nth-last-child(3) { color: red; }
+
+10. :nth-of-type(n): Digunakan untuk memilih elemen yang merupakan tipe ke-n dalam konteks orang tua mereka.
+Contoh penggunaan: p:nth-of-type(odd) { background-color: #f9f9f9; }
+
+11. :nth-last-of-type(n): Digunakan untuk memilih elemen yang merupakan tipe ke-n dari belakang dalam konteks orang tua mereka.
+Contoh penggunaan: p:nth-last-of-type(2) { font-size: 18px; }
+
+12. :not(selector): Digunakan untuk memilih elemen yang tidak cocok dengan selektor yang diberikan.
+Contoh penggunaan: input:not([type="text"]) { background-color: #eee; }
+
+13. :empty: Digunakan untuk memilih elemen yang tidak memiliki anak.
+Contoh penggunaan: p:empty { display: none; }
+
+14. :checked: Digunakan untuk memilih elemen input yang memiliki status terpilih (checked), seperti checkbox atau radio button.
+Contoh penggunaan: input[type="checkbox"]:checked { border-color: green; }
+
+15. :disabled: Digunakan untuk memilih elemen input yang dalam keadaan dinonaktifkan (disabled).
+Contoh penggunaan: input:disabled { opacity: 0.5; }
+
+16. :enabled: Digunakan untuk memilih elemen input yang dalam keadaan aktif atau dapat diaktifkan (enabled).
+Contoh penggunaan: input:enabled { border-color: blue; }
+
+17. :target: Digunakan untuk memilih elemen target yang sedang dituju dalam URL hash.
+Contoh penggunaan: #
+
+section2:target { background-color: yellow; }
+
+Itu adalah beberapa pseudo-class dalam HTML secara lengkap. Pseudo-class ini digunakan untuk memanipulasi dan memilih elemen secara spesifik berdasarkan keadaan atau posisi mereka.

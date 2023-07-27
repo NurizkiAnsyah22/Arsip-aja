@@ -1,0 +1,104 @@
+Materi dan dokumentasi Express.js
+
+Pendahuluan:
+Express.js adalah kerangka kerja (framework) aplikasi web yang dibangun di atas Node.js. Dikembangkan untuk mempermudah pembuatan aplikasi web dengan menggunakan Node.js, Express.js menyediakan berbagai fitur yang memungkinkan pengembang untuk membuat aplikasi web yang efisien dan skalabel. Berikut adalah materi dan dokumentasi singkat mengenai Express.js.
+
+1. Instalasi:
+Untuk memulai menggunakan Express.js, langkah pertama yang perlu dilakukan adalah menginstalnya. Anda dapat menginstal Express.js dengan menggunakan npm (Node Package Manager) yang sudah terintegrasi dengan Node.js. Berikut adalah langkah-langkah instalasi Express.js:
+
+   a. Pastikan Node.js sudah terinstal di komputer Anda. Anda dapat mengunduhnya dari situs resmi Node.js (https://nodejs.org).
+   b. Buka terminal atau command prompt dan ketik perintah berikut:
+      ```
+      npm install express
+      ```
+
+2. Membuat Aplikasi Express.js:
+Setelah menginstal Express.js, langkah selanjutnya adalah membuat aplikasi Express.js. Berikut adalah contoh kode sederhana untuk membuat aplikasi Express.js:
+
+   ```javascript
+   const express = require('express');
+   const app = express();
+
+   // Menangani permintaan GET pada URL utama
+   app.get('/', (req, res) => {
+     res.send('Halo, dunia!');
+   });
+
+   // Menjalankan server pada port 3000
+   app.listen(3000, () => {
+     console.log('Aplikasi Express.js berjalan pada port 3000');
+   });
+   ```
+
+   Anda dapat menyimpan kode di atas dalam file dengan ekstensi `.js`, misalnya `app.js`. Kemudian, jalankan aplikasi dengan menggunakan perintah `node app.js`. Aplikasi Express.js Anda akan berjalan dan dapat diakses melalui browser dengan alamat `http://localhost:3000`.
+
+3. Routing:
+Express.js menyediakan fitur routing yang memungkinkan Anda untuk menentukan respons yang tepat berdasarkan URL yang diminta oleh klien. Berikut adalah contoh penggunaan routing dalam Express.js:
+
+   ```javascript
+   app.get('/about', (req, res) => {
+     res.send('Halaman About');
+   });
+
+   app.get('/contact', (req, res) => {
+     res.send('Halaman Kontak');
+   });
+   ```
+
+   Dalam contoh di atas, ketika pengguna mengakses URL `http://localhost:3000/about`, server akan mengirimkan respon "Halaman About". Begitu pula dengan URL `http://localhost:3000/contact` akan menghasilkan respon "Halaman Kontak".
+
+4. Middleware:
+Middleware adalah fungsi yang berjalan sebelum atau setelah proses routing dalam Express.js. Middleware dapat digunakan untuk melakukan berbagai tugas seperti validasi input, otorisasi, logging, dll. Berikut adalah contoh penggunaan middleware dalam Express.js:
+
+   ```javascript
+   // Contoh middleware sederhana
+   app.use((req, res, next) => {
+     console.log('Middleware dijalankan');
+     next();
+   });
+
+   // Contoh penggunaan middleware khusus untuk path tertentu
+   app.use('/admin', (req, res, next) => {
+     console.log('Middleware admin dijalankan');
+     next();
+   });
+   ```
+
+   Dalam contoh di atas, middleware pertama akan dijalankan untuk setiap permintaan yang masuk, sedangkan middleware kedua hanya akan dijalankan jika URL dimulai dengan `/admin`.
+
+5. Template Engine:
+Express.js mendukung berbagai template engine seperti EJS, Handlebars, Pug, dan sebagainya. Template engine memungkinkan Anda untuk membuat tampilan (view) dinamis dalam aplikasi web Anda. Berikut adalah contoh penggunaan template engine EJS dalam Express.js:
+
+   a. Instal EJS:
+      ```
+      npm install ejs
+      ```
+
+   b. Mengatur penggunaan EJS sebagai template engine:
+      ```javascript
+      // Mengatur EJS sebagai template engine
+      app.set('view engine', 'ejs');
+      ```
+
+   c. Membuat file tampilan (view) dengan ekstensi `.ejs`, misalnya `halaman.ejs`:
+      ```html
+      <html>
+        <head>
+          <title>Halo, dunia!</title>
+        </head>
+        <body>
+          <h1><%= pesan %></h1>
+        </body>
+      </html>
+      ```
+
+   d. Menggunakan tampilan dalam aplikasi Express.js:
+      ```javascript
+      app.get('/', (req, res) => {
+        res.render('halaman', { pesan: 'Halo, dunia!' });
+      });
+      ```
+
+   Dalam contoh di atas, Express.js akan merender file `halaman.ejs` dengan mengganti `<%= pesan %>` dengan nilai yang diberikan dalam objek `{ pesan: 'Halo, dunia!' }`.
+
+Itu adalah materi dan dokumentasi singkat mengenai Express.js. Terdapat banyak fitur dan konsep yang dapat dieksplorasi lebih lanjut dalam pengembangan aplikasi web menggunakan Express.js. Anda dapat merujuk ke dokumentasi resmi Express.js (https://expressjs.com/) untuk memperdalam pemahaman dan mempelajari lebih banyak fitur yang disediakan oleh framework ini.

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms</title>
+    <style>
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 50px auto; transition: 1s;
+           
+        }
+        .kotak2 {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 50px auto;
+            transition: 1s;
+           
+        }
+        .kotak3 {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 50px auto; transition: 1s;
+           
+        }
+        .kotak:hover {
+            transform: scalex(1.5) scaleY(2);
+
+        } 
+        .kotak2:hover {
+            transform: rotateX(90deg);
+        }
+        .kotak3:hover {
+            transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="kotak">
+       
+    </div>
+    <br><div class="kotak2"></div>
+    <br><div class="kotak3"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aliquid deleniti mollitia architecto aliquam. Suscipit assumenda, accusamus quisquam quis nostrum unde enim a mollitia alias.</p>
+</body>
+</html>   

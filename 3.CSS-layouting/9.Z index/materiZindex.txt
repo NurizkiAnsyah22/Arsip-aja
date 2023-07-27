@@ -1,0 +1,36 @@
+Z-index adalah properti CSS yang digunakan untuk mengontrol tumpukan (stacking) elemen di dalam tata letak (layout) dengan menggunakan angka. Nilai z-index menentukan posisi relatif elemen di atas atau di bawah elemen lain dalam tumpukan. Semakin besar nilai z-index, semakin tinggi elemen tersebut akan ditempatkan dalam tumpukan.
+
+Contoh penggunaan z-index:
+
+1. Membuat elemen terlihat di atas elemen lain:
+   Jika Anda memiliki dua elemen yang tumpang tindih (overlap) dan ingin elemen pertama muncul di atas elemen kedua, Anda dapat menggunakan z-index. Misalnya, jika Anda memiliki elemen kotak dengan class "box1" dan elemen teks dengan class "text1", Anda dapat menggunakan kode CSS berikut:
+
+   ```css
+   .box1 {
+     position: relative;
+     z-index: 2;
+   }
+
+   .text1 {
+     position: relative;
+     z-index: 1;
+   }
+   ```
+
+   Dengan pengaturan z-index tersebut, elemen dengan class "box1" akan tampil di atas elemen dengan class "text1".
+
+2. Mengatur elemen tetap di atas elemen lain:
+   Kadang-kadang Anda ingin membuat elemen tetap atau mengambang (floating) di atas elemen lain, bahkan saat pengguna melakukan scrolling. Dalam hal ini, Anda dapat menggunakan z-index dengan nilai yang tinggi. Misalnya, jika Anda memiliki elemen pemberitahuan (notification) dengan class "notification", Anda dapat menggunakan kode CSS berikut:
+
+   ```css
+   .notification {
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     z-index: 9999;
+   }
+   ```
+
+   Dengan pengaturan z-index yang tinggi (misalnya 9999), elemen pemberitahuan akan tetap di atas elemen lain meskipun pengguna melakukan scrolling halaman.
+
+Perlu diingat bahwa penggunaan z-index harus diperhatikan dengan baik agar tidak terjadi tumpang tindih atau masalah lain dalam tata letak halaman. Selain itu, perlu juga memperhatikan konteks dan struktur elemen lain dalam halaman untuk menghindari konflik dalam pengaturan z-index.

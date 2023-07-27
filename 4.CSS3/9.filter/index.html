@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        body {
+            text-align: center;
+            
+        }
+
+        /*cek filter https://github.khronos.org/siggraph2012course/CanvasCSSAndWebGL/demos/CSS_Filters.htm */
+        img{
+            width: 500px;
+            height: 500px;
+            filter:blur(10px) grayscale(1);
+           transition: 1s;
+        }
+        img:hover {
+            filter: blur(0) grayscale(0);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <img src="profile.png" alt="nurizkiansyah">
+    
+</body>
+</html>

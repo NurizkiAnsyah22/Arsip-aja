@@ -1,0 +1,318 @@
+Tentu, berikut ini adalah daftar fungsi yang sangat lengkap beserta penjelasan dan contoh implementasinya dalam JavaScript:
+
+1. `parseInt(string, radix)`
+   - Penjelasan: Mengubah string menjadi bilangan bulat (integer) berdasarkan radix (basis) yang ditentukan. Radix opsional dan jika tidak ditentukan, angka akan dianggap dalam basis 10.
+   - Contoh:
+     ```javascript
+     var number = parseInt("10");
+     console.log(number); // Output: 10
+     ```
+
+2. `parseFloat(string)`
+   - Penjelasan: Mengubah string menjadi bilangan desimal (float).
+   - Contoh:
+     ```javascript
+     var number = parseFloat("3.14");
+     console.log(number); // Output: 3.14
+     ```
+
+3. `isNaN(value)`
+   - Penjelasan: Memeriksa apakah nilai tertentu bukan angka (Not a Number).
+   - Contoh:
+     ```javascript
+     console.log(isNaN(10));    // Output: false
+     console.log(isNaN("abc")); // Output: true
+     ```
+
+4. `isFinite(value)`
+   - Penjelasan: Memeriksa apakah nilai tertentu adalah angka terbatas (finite).
+   - Contoh:
+     ```javascript
+     console.log(isFinite(10));     // Output: true
+     console.log(isFinite(Infinity)); // Output: false
+     ```
+
+5. `Math.abs(x)`
+   - Penjelasan: Mengembalikan nilai absolut (nilai non-negatif) dari suatu bilangan.
+   - Contoh:
+     ```javascript
+     console.log(Math.abs(-5));  // Output: 5
+     console.log(Math.abs(3.14)); // Output: 3.14
+     ```
+
+6. `Math.ceil(x)`
+   - Penjelasan: Mengembalikan bilangan bulat terkecil yang lebih besar dari atau sama dengan suatu bilangan.
+   - Contoh:
+     ```javascript
+     console.log(Math.ceil(3.14));  // Output: 4
+     console.log(Math.ceil(5.8));   // Output: 6
+     ```
+
+7. `Math.floor(x)`
+   - Penjelasan: Mengembalikan bilangan bulat terbesar yang lebih kecil dari atau sama dengan suatu bilangan.
+   - Contoh:
+     ```javascript
+     console.log(Math.floor(3.14)); // Output: 3
+     console.log(Math.floor(5.8));  // Output: 5
+     ```
+
+8. `Math.round(x)`
+   - Penjelasan: Mengembalikan bilangan bulat terdekat dari suatu bilangan.
+   - Contoh:
+     ```javascript
+     console.log(Math.round(3.14)); // Output: 3
+     console.log(Math.round(5.8));  // Output: 6
+     ```
+
+9. `Math.random()`
+   - Penjelasan: Mengembalikan bilangan acak antara 0 (inklusif) dan 1 (eksklusif).
+   - Contoh:
+     ```javascript
+     console.log(Math.random()); // Output: Angka acak antara 0 dan 1
+     ```
+
+10. `Math.max(num1, num2, ...)`
+    - Penjelasan: Mengembalikan nilai terbesar dari beberapa bilangan.
+    - Contoh:
+      ```javascript
+      console.log(Math.max(5,
+
+ 10, 3)); // Output: 10
+      ```
+
+1 1. `Math.min(num1, num2, ...)`
+    - Penjelasan: Mengembalikan nilai terkecil dari beberapa bilangan.
+    - Contoh:
+      ```javascript
+      console.log(Math.min(5, 10, 3)); // Output: 3
+      ```
+
+12. `Math.pow(base, exponent)`
+    - Penjelasan: Mengembalikan hasil perpangkatan dari suatu bilangan ke pangkat tertentu.
+    - Contoh:
+      ```javascript
+      console.log(Math.pow(2, 3)); // Output: 8 (2 pangkat 3)
+      ```
+
+13. `Math.sqrt(x)`
+    - Penjelasan: Mengembalikan akar kuadrat dari suatu bilangan.
+    - Contoh:
+      ```javascript
+      console.log(Math.sqrt(16)); // Output: 4 (akar kuadrat dari 16)
+      ```
+
+14. `String.length`
+    - Penjelasan: Mengembalikan panjang (jumlah karakter) dari suatu string.
+    - Contoh:
+      ```javascript
+      var str = "Hello";
+      console.log(str.length); // Output: 5
+      ```
+
+15. `String.toUpperCase()`
+    - Penjelasan: Mengubah semua karakter dalam suatu string menjadi huruf besar.
+    - Contoh:
+      ```javascript
+      var str = "hello";
+      console.log(str.toUpperCase()); // Output: HELLO
+      ```
+
+16. `String.toLowerCase()`
+    - Penjelasan: Mengubah semua karakter dalam suatu string menjadi huruf kecil.
+    - Contoh:
+      ```javascript
+      var str = "HELLO";
+      console.log(str.toLowerCase()); // Output: hello
+      ```
+
+17. `String.charAt(index)`
+    - Penjelasan: Mengembalikan karakter pada indeks yang ditentukan dalam suatu string.
+    - Contoh:
+      ```javascript
+      var str = "Hello";
+      console.log(str.charAt(1)); // Output: e
+      ```
+
+18. `String.indexOf(searchValue, startIndex)`
+    - Penjelasan: Mengembalikan indeks pertama dari kemunculan nilai pencarian dalam suatu string, dimulai dari indeks awal yang ditentukan.
+    - Contoh:
+      ```javascript
+      var str = "Hello, world!";
+      console.log(str.indexOf("o"));       // Output: 4 (indeks pertama "o")
+      console.log(str.indexOf("o", 5));    // Output: 8 (indeks pertama "o" setelah indeks 5)
+      console.log(str.indexOf("z"));       // Output: -1 (tidak ditemukan)
+      ```
+
+19. `String.slice(startIndex, endIndex)`
+    - Penjelasan: Mengembalikan bagian dari suatu string, mulai dari indeks awal hingga indeks akhir (tidak termasuk indeks akhir).
+    - Contoh:
+      ```javascript
+      var str = "Hello, world!";
+      console.log(str.slice(7, 12)); // Output: world
+      ```
+
+20. `String.split(separator)`
+    - Penjelasan: Membagi suatu string menjadi array substring berdasarkan pemisah yang ditentukan.
+    - Contoh:
+      ```javascript
+      var str = "apple,banana,grape";
+      var arr = str.split(",");
+      console.log(arr); // Output: ["apple", "banana", "
+
+grape"]
+      ```
+
+21. `String.replace(searchValue, replaceValue)`
+    - Penjelasan: Menggantikan nilai pencarian dalam suatu string dengan nilai pengganti yang ditentukan.
+    - Contoh:
+      ```javascript
+      var str = "Hello, world!";
+      var newStr = str.replace("world", "universe");
+      console.log(newStr); // Output: Hello, universe!
+      ```
+
+22. `Array.length`
+    - Penjelasan: Mengembalikan panjang (jumlah elemen) dari suatu array.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3, 4, 5];
+      console.log(arr.length); // Output: 5
+      ```
+
+23. `Array.push(element1, element2, ...)`
+    - Penjelasan: Menambahkan satu atau lebih elemen ke akhir array dan mengembalikan panjang array yang baru.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3];
+      arr.push(4, 5);
+      console.log(arr); // Output: [1, 2, 3, 4, 5]
+      ```
+
+24. `Array.pop()`
+    - Penjelasan: Menghapus dan mengembalikan elemen terakhir dari array.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3];
+      var lastElement = arr.pop();
+      console.log(lastElement); // Output: 3
+      console.log(arr);         // Output: [1, 2]
+      ```
+
+25. `Array.join(separator)`
+    - Penjelasan: Menggabungkan semua elemen array menjadi string dengan menggunakan pemisah yang ditentukan.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3];
+      var str = arr.join("-");
+      console.log(str); // Output: 1-2-3
+      ```
+
+26. `Array.slice(startIndex, endIndex)`
+    - Penjelasan: Mengembalikan bagian dari array, mulai dari indeks awal hingga indeks akhir (tidak termasuk indeks akhir), sebagai array baru.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3, 4, 5];
+      var newArr = arr.slice(1, 4);
+      console.log(newArr); // Output: [2, 3, 4]
+      ```
+
+27. `Array.indexOf(searchElement, startIndex)`
+    - Penjelasan: Mengembalikan indeks pertama dari kemunculan elemen pencarian dalam array, dimulai dari indeks awal yang ditentukan.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3, 4, 5];
+      console.log(arr.indexOf(3));       // Output: 2 (indeks pertama dari angka 3)
+      console.log(arr.indexOf(3, 3));    // Output: -1 (tidak ditemukan setelah indeks 3)
+      console.log(arr.indexOf(6));       // Output: -1 (tidak ditemukan)
+      ```
+
+28. `Array.includes(searchElement, startIndex)`
+    - Penjelasan: Memeriksa apakah elemen pencarian ada dalam array, dimulai dari indeks awal yang ditentukan, dan mengembalikan nilai boolean.
+    - Contoh:
+      ```javascript
+     
+
+ var arr = [1, 2, 3, 4, 5];
+      console.log(arr.includes(3));       // Output: true
+      console.log(arr.includes(3, 3));    // Output: false
+      console.log(arr.includes(6));       // Output: false
+      ```
+
+29. `Array.concat(array1, array2, ...)`
+    - Penjelasan: Menggabungkan dua atau lebih array menjadi satu array baru.
+    - Contoh:
+      ```javascript
+      var arr1 = [1, 2, 3];
+      var arr2 = [4, 5];
+      var newArr = arr1.concat(arr2);
+      console.log(newArr); // Output: [1, 2, 3, 4, 5]
+      ```
+
+30. `Array.reverse()`
+    - Penjelasan: Membalik urutan elemen dalam array.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3];
+      arr.reverse();
+      console.log(arr); // Output: [3, 2, 1]
+      ```
+
+31. `Array.sort()`
+    - Penjelasan: Mengurutkan elemen-elemen dalam array secara leksikografis (berdasarkan urutan ASCII) atau berdasarkan fungsi pembanding yang ditentukan.
+    - Contoh:
+      ```javascript
+      var arr = [3, 1, 2];
+      arr.sort();
+      console.log(arr); // Output: [1, 2, 3]
+      ```
+
+32. `Array.forEach(callback)`
+    - Penjelasan: Menjalankan fungsi callback untuk setiap elemen dalam array.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3];
+      arr.forEach(function (element) {
+        console.log(element);
+      });
+      // Output:
+      // 1
+      // 2
+      // 3
+      ```
+
+33. `Array.map(callback)`
+    - Penjelasan: Membuat array baru dengan hasil pemanggilan fungsi callback untuk setiap elemen dalam array asal.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3];
+      var newArr = arr.map(function (element) {
+        return element * 2;
+      });
+      console.log(newArr); // Output: [2, 4, 6]
+      ```
+
+34. `Array.filter(callback)`
+    - Penjelasan: Membuat array baru yang hanya berisi elemen-elemen dari array asal yang lolos tes dalam fungsi callback.
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3, 4, 5];
+      var filteredArr = arr.filter(function (element) {
+        return element % 2 === 0;
+      });
+      console.log(filteredArr); // Output: [2, 4]
+      ```
+
+35. `Array.reduce(callback, initialValue)`
+    - Penjelasan: Mengurangi elemen-elemen dalam array menjadi satu nilai dengan menggunakan fungsi callback dan nilai awal (opsional).
+    - Contoh:
+      ```javascript
+      var arr = [1, 2, 3, 4, 5];
+      var sum = arr.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+      }, 0);
+      console.log(sum); // Output: 15 (1 + 2 + 3 + 4 + 5)
+      ```
+
+Itu adalah daftar fungsi yang sangat
+
+ lengkap beserta penjelasan dan contoh implementasi dalam JavaScript.

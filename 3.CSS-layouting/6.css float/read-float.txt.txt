@@ -1,0 +1,36 @@
+Properti CSS `float` digunakan untuk mengatur bagaimana elemen mengambang (float) di sekitar elemen lain di dalam tata letak (layout) halaman web. Saat diterapkan pada elemen, properti `float` menggeser elemen tersebut ke arah tertentu (kiri atau kanan) dan mengizinkan elemen lain untuk mengisi ruang di sekitarnya.
+
+Berikut adalah definisi, daftar properti, dan implementasi properti `float`:
+
+1. **Definisi**:
+   - Properti `float` digunakan untuk mengatur elemen menjadi elemen mengambang yang mempengaruhi tata letak elemen dan aliran teks di sekitarnya.
+   - Elemen dengan properti `float` ditempatkan sejajar dengan sisi yang ditentukan (kiri atau kanan) dan elemen-elemen berikutnya akan "mengambang" mengelilingi elemen tersebut.
+
+2. **Daftar Properti**:
+   - `float: left;` - Menggeser elemen ke sisi kiri dan mengizinkan elemen-elemen berikutnya mengambang di sebelah kanan elemen tersebut.
+   - `float: right;` - Menggeser elemen ke sisi kanan dan mengizinkan elemen-elemen berikutnya mengambang di sebelah kiri elemen tersebut.
+   - `float: none;` (default) - Menghapus pengaturan float dan elemen akan mengikuti aliran normal dokumen.
+
+3. **Implementasi**:
+   - Contoh penggunaan properti `float` untuk menggeser elemen ke sisi kiri:
+     ```css
+     .elemen {
+       float: left;
+     }
+     ```
+   - Contoh penggunaan properti `float` untuk menggeser elemen ke sisi kanan:
+     ```css
+     .elemen {
+       float: right;
+     }
+     ```
+   - Contoh penggunaan properti `float` untuk menghapus float:
+     ```css
+     .elemen {
+       float: none;
+     }
+     ```
+
+Implementasi properti `float` dapat bervariasi tergantung pada tata letak halaman web yang Anda gunakan. Misalnya, Anda dapat menggunakan properti `float` untuk mengatur gambar di sebelah teks atau membuat tata letak dengan beberapa kolom di sebelah elemen lainnya.
+
+Namun, penting untuk diingat bahwa penggunaan properti `float` dapat mempengaruhi tata letak secara keseluruhan dan perlu diperhatikan dengan hati-hati agar tidak merusak aliran normal dokumen. Saat menggunakan `float`, seringkali diperlukan penggunaan properti tambahan seperti `clear` untuk menghindari efek mengambang yang tidak diinginkan.

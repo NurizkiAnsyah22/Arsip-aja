@@ -1,0 +1,63 @@
+Closure adalah kombinasi antara fungsi dan lingkungannya (lexical environment) yang memungkinkan fungsi tersebut mengakses variabel-variabel di luar lingkungannya bahkan setelah fungsi tersebut selesai dieksekusi. Dalam JavaScript, setiap kali fungsi dibuat, closure terbentuk secara otomatis.
+
+Dalam closure, fungsi "mengingat" lingkungan tempat ia diciptakan, sehingga variabel-variabel yang ada di lingkungan tersebut tetap dapat diakses oleh fungsi bahkan setelah fungsi tersebut selesai dieksekusi. Ini memungkinkan kita untuk membuat fungsi-fungsi yang memiliki data privat dan tetap dapat mengakses dan memanipulasi data tersebut.
+
+1. Membentuk Closure:
+   Closure terbentuk ketika sebuah fungsi yang ada di dalam fungsi lain mengakses variabel-variabel dari lingkungan induknya. Fungsi dalam closure dapat mengakses variabel lokal di dalam fungsi induk, serta variabel global yang dapat diakses di lingkungan induk.
+
+   ```javascript
+   function outerFunction() {
+     var outerVariable = "Ini variabel luar";
+
+     function innerFunction() {
+       console.log(outerVariable);
+     }
+
+     return innerFunction;
+   }
+
+   var closureExample = outerFunction();
+   closureExample(); // Output: Ini variabel luar
+   ```
+
+   Dalam contoh di atas, `innerFunction` adalah closure karena ia mengakses variabel `outerVariable` dari lingkungan induknya, yaitu `outerFunction`. Closure tersebut tetap memiliki akses ke variabel `outerVariable` bahkan setelah `outerFunction` selesai dieksekusi.
+
+2. Penggunaan Closure:
+   - Menciptakan data privat: Closure memungkinkan kita untuk menciptakan variabel yang hanya dapat diakses dan dimanipulasi melalui fungsi yang ada di dalamnya, sehingga menciptakan konsep data privat.
+
+   ```javascript
+   function counter() {
+     var count = 0;
+
+     function increment() {
+       count++;
+       console.log(count);
+     }
+
+     return increment;
+   }
+
+   var counter1 = counter();
+   counter1(); // Output: 1
+   counter1(); // Output: 2
+   ```
+
+   Dalam contoh di atas, fungsi `counter` mengembalikan fungsi `increment` yang memiliki akses ke variabel `count`. Variabel `count` bersifat privat dan hanya dapat diakses dan dimanipulasi melalui fungsi `increment`.
+
+   - Membuat fungsi dengan konfigurasi khusus: Closure juga memungkinkan kita untuk membuat fungsi dengan konfigurasi khusus yang dapat digunakan berkali-kali dengan argumen yang berbeda.
+
+   ```javascript
+   function greetingGenerator(greeting) {
+     return function (name) {
+       console.log(`${greeting}, ${name}!`);
+     };
+   }
+
+   var sayHello = greetingGenerator("Hello");
+   var sayHi = greetingGenerator("Hi");
+
+   sayHello("John"); // Output: Hello, John!
+   sayHi("Jane"); // Output: Hi, Jane!
+   ```
+
+   Dalam contoh di atas, fungsi `greetingGenerator` mengembalikan fungsi yang mencetak pesan salam dengan argumen yang telah ditentukan sebelumnya. Dengan menggunakan closure, kita dapat membuat fungsi `sayHello` dan `say

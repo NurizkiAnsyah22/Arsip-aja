@@ -1,0 +1,69 @@
+Materi Event Bubbling
+=======================
+
+Event bubbling adalah mekanisme di mana suatu peristiwa yang terjadi pada elemen anak akan "naik" secara berurutan melalui semua elemen induk yang memuat elemen tersebut. Dalam konteks DOM (Document Object Model), ketika suatu peristiwa terjadi pada suatu elemen, peristiwa tersebut juga akan dipicu pada semua elemen induknya secara berurutan, mulai dari elemen terdalam hingga elemen terluar. Proses ini disebut "bubbling" karena peristiwa naik melalui hierarki elemen seperti gelembung yang naik ke permukaan.
+
+Event bubbling memiliki beberapa implikasi yang perlu dipahami dalam pengembangan web. Beberapa hal yang perlu diperhatikan adalah:
+
+1. Urutan Penanganan Peristiwa: Dalam event bubbling, peristiwa akan dipicu pada elemen terdalam terlebih dahulu, kemudian berlanjut ke elemen yang lebih luas secara berurutan. Ini berarti jika elemen anak dan elemen induk masing-masing memiliki penanganan peristiwa yang terdaftar, penanganan peristiwa pada elemen anak akan dijalankan sebelum penanganan peristiwa pada elemen induk.
+
+2. Penghentian Bubbling: Bubbling dapat dihentikan dengan menggunakan metode `event.stopPropagation()`. Ketika metode ini dipanggil dalam penanganan peristiwa pada suatu elemen, peristiwa tidak akan naik lebih lanjut ke elemen-induk berikutnya.
+
+Implementasi Event Bubbling
+=============================
+
+Berikut adalah contoh implementasi event bubbling menggunakan JavaScript:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling Example</title>
+  <style>
+    .parent {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      padding: 20px;
+    }
+  
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">
+      <button id="myButton">Klik Saya</button>
+    </div>
+  </div>
+
+  <script>
+    const parent = document.querySelector('.parent');
+    const child = document.querySelector('.child');
+    const button = document.getElementById('myButton');
+
+    parent.addEventListener('click', function() {
+      console.log('Peristiwa pada elemen parent');
+    });
+
+    child.addEventListener('click', function() {
+      console.log('Peristiwa pada elemen child');
+    });
+
+    button.addEventListener('click', function(event) {
+      event.stopPropagation();
+      console.log('Peristiwa pada tombol');
+    });
+  </script>
+</body>
+</html>
+```
+
+Dalam contoh ini, terdapat elemen parent, elemen child di dalam parent, dan sebuah tombol di dalam child. Ketika tombol ditekan, peristiwa klik akan naik melalui elemen child dan elemen parent secara berurutan. Namun, dengan memanggil `event.stopPropagation()` dalam penanganan peristiwa pada tombol, peristiwa bubbling dihentikan dan hanya penanganan peristiwa pada tombol yang akan dijalankan.
+
+Dengan menggunakan event bubbling, Anda dapat memanfaatkan hier

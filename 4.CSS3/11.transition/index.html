@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            transition: 1s;
+            
+        }
+        .container:hover .kotak {
+            transform: rotate(720deg);
+            margin-left: 800px; 
+            background-color: blue;
+        }
+        .container{
+
+        width: 900px;
+        margin: 10px;
+        border: 5px solid black;
+        }
+
+        
+
+        .kotak2 {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            transition: margin-left 1s;
+            
+        }
+        .container2:hover .kotak2 {
+            transform: rotate(720deg);
+            margin-left: 800px; 
+            background-color: blue;
+        }
+        .container2{
+
+        width: 900px;
+        margin: 10px;
+        border: 5px solid black;
+        }
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="kotak"></div>
+</div>
+<br>
+<div class="container2">
+    <div class="kotak2"></div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*element vertikal*/
+.satu {
+    width: 200px;
+    height: 200px ;
+    background-color: brown;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+    
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color:chartreuse;
+    margin-top: 50px;
+
+}
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color:aqua;
+}
+
+/*element horizontal*/
+
+.container {
+    display: flex;
+}
+.empat {
+    width: 200px;
+    height: 200px ;
+    background-color: brown;
+    
+}
+    
+.lima {
+    width: 100px;
+    height: 100px;
+    background-color:chartreuse;
+   
+}
+.enam {
+    width: 50px;
+    height: 50px;
+    background-color:aqua;
+}

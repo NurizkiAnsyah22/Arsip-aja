@@ -1,0 +1,8 @@
+//refactoring dari latihan1.
+
+function jumlahVolDuaKubus(a, b) {
+
+  return a * a * a + b * b * b; //menjalankan functio
+}
+alert(jumlahVolDuaKubus(8, 3));
+

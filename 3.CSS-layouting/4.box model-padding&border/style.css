@@ -1,0 +1,30 @@
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    
+}
+
+.border
+{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 20px auto;
+    padding: 50px;
+    border: 5px dotted black;
+}
+
+.satu {
+ 
+    background-color: blue;
+    padding: 10px;
+    border: 5px solid rebeccapurple;
+}
+
+.dua {
+  
+    background-color: chartreuse;
+    padding: 30px;
+    border: 10px dashed yellow;
+}

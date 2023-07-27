@@ -1,0 +1,99 @@
+**Asynchronous JavaScript**
+
+Asynchronous JavaScript adalah paradigma pemrograman di mana kode JavaScript dapat dieksekusi secara tidak berurutan, tanpa harus menunggu proses sebelumnya selesai. Ini memungkinkan eksekusi yang lebih efisien dan tidak menghambat tugas lainnya.
+
+JavaScript menggunakan model pemrograman asynchronous untuk menangani operasi yang membutuhkan waktu, seperti mengambil data dari server, membaca file, atau menunggu respons pengguna. Dalam mode asynchronous, JavaScript dapat melanjutkan eksekusi kode lainnya sambil menunggu operasi yang sedang berjalan selesai. 
+
+Ada beberapa mekanisme yang digunakan dalam JavaScript untuk mengatur eksekusi asynchronous, seperti:
+
+1. **Callback Functions**: Callback functions adalah fungsi yang dilewatkan sebagai argumen ke fungsi lain. Callback ini akan dipanggil oleh fungsi tersebut setelah operasi asynchronous selesai. Callback digunakan untuk menangani respons atau hasil dari operasi tersebut.
+
+2. **Promises**: Promises adalah konstruksi bahasa JavaScript yang digunakan untuk mengatasi callback hell (masalah kompleksitas yang terjadi ketika banyak callback bersarang). Promises memungkinkan Anda untuk mengaitkan tindakan tertentu dengan hasil yang akan datang. Mereka memiliki tiga status: pending (tunggu), fulfilled (terpenuhi), atau rejected (ditolak).
+
+3. **Async/Await**: Async/await adalah sintaks baru yang diperkenalkan dalam ES2017 (ECMAScript 8) yang memungkinkan penulisan kode asynchronous dengan gaya yang lebih sinkron. Ini memanfaatkan Promises dan membuatnya lebih mudah untuk membaca dan menulis kode asynchronous.
+
+Berikut adalah contoh kode yang menggambarkan penggunaan masing-masing mekanisme:
+
+**1. Callback Functions:**
+
+```javascript
+function fetchData(callback) {
+  setTimeout(function () {
+    const data = 'Ini data dari server';
+    callback(data);
+  }, 2000);
+}
+
+function processData(data) {
+  console.log('Data yang diterima:', data);
+}
+
+fetchData(processData);
+console.log('Eksekusi kode berlanjut...');
+```
+
+Pada contoh di atas, `fetchData` adalah fungsi yang mengambil data dari server setelah jeda 2 detik dan memanggil fungsi callback `processData` dengan data yang diterima sebagai argumen. Kemudian, `processData` mencetak data tersebut. Kita juga mencetak pesan "Eksekusi kode berlanjut..." setelah memanggil `fetchData`. Hal ini menunjukkan bahwa eksekusi kode berlanjut tanpa harus menunggu respons dari server.
+
+**2. Promises:**
+
+```javascript
+function fetchData() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      const data = 'Ini data dari server';
+      resolve(data);
+      // reject('Error occurred');
+    }, 2000);
+  });
+}
+
+fetchData()
+  .then(function (data) {
+    console.log('Data yang diterima:', data);
+  })
+  .catch(function (error) {
+    console.log('Terjadi kesalahan:', error);
+  });
+
+console.log('Eksekusi kode berlanjut...');
+```
+
+Pada contoh di atas, `fetchData` mengembalikan sebuah promise. Jika operasi berhasil, promise akan diubah menjadi status "terpenuhi" (fulfilled) dengan data sebagai hasilnya. Jika ter
+
+jadi kesalahan, promise akan diubah menjadi status "ditolak" (rejected) dengan pesan error. Kemudian, kita menggunakan `.then()` untuk menangani kasus promise terpenuhi dan `.catch()` untuk menangani kasus promise ditolak. Seperti sebelumnya, pesan "Eksekusi kode berlanjut..." dicetak setelah memanggil `fetchData`, menunjukkan bahwa eksekusi kode berlanjut tanpa harus menunggu hasil dari promise.
+
+**3. Async/Await:**
+
+```javascript
+function fetchData() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      const data = 'Ini data dari server';
+      resolve(data);
+      // reject('Error occurred');
+    }, 2000);
+  });
+}
+
+async function processAsyncData() {
+  try {
+    const data = await fetchData();
+    console.log('Data yang diterima:', data);
+  } catch (error) {
+    console.log('Terjadi kesalahan:', error);
+  }
+}
+
+processAsyncData();
+console.log('Eksekusi kode berlanjut...');
+```
+
+Pada contoh di atas, kita menggunakan kata kunci `async` sebelum deklarasi fungsi `processAsyncData`. Kemudian, dengan menggunakan kata kunci `await`, kita menunggu hasil dari promise yang dikembalikan oleh `fetchData`. Jika promise terpenuhi, nilai akan disimpan dalam variabel `data` dan dicetak. Jika terjadi kesalahan, blok `catch` akan menangani dan mencetak pesan error. Seperti sebelumnya, pesan "Eksekusi kode berlanjut..." dicetak setelah memanggil `processAsyncData`, menunjukkan bahwa eksekusi kode berlanjut tanpa harus menunggu hasil dari async function.
+
+Dalam contoh-contoh di atas, kita melihat bagaimana asynchronous JavaScript menggunakan callback functions, promises, dan async/await untuk mengatasi operasi yang membutuhkan waktu. Setiap mekanisme ini memiliki kelebihan dan kekurangan sendiri, dan pilihan Anda tergantung pada kebutuhan dan preferensi Anda dalam menulis kode asynchronous.
+
+
+
+saya mau tanya bukannya di js tanda kutif ' dan " sama aja ? dan lebih baik menggunakan `
+
+atau beri saya gambaran kapan dan dimana saya menggunakan tanda kutif yang pas untuk ' , " dan `

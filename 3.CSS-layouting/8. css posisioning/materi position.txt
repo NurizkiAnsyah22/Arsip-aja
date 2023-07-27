@@ -1,0 +1,41 @@
+CSS Property `position` adalah properti yang digunakan untuk mengatur tipe posisi suatu elemen di dalam halaman web. Terdapat beberapa nilai yang dapat digunakan untuk properti `position`:
+
+1. `static`: Ini adalah nilai default untuk `position`. Elemen dengan `position: static` akan mengikuti alur normal dokumen dan tidak akan dipengaruhi oleh properti-posisi lainnya seperti `top`, `right`, `bottom`, atau `left`.
+
+2. `relative`: Elemen dengan `position: relative` tetap berada dalam alur normal dokumen, tetapi dapat diatur posisinya dengan menggunakan properti `top`, `right`, `bottom`, dan `left`. Pengaturan posisi akan dilakukan relatif terhadap posisi elemen aslinya.
+
+3. `absolute`: Elemen dengan `position: absolute` dihapus dari alur normal dokumen dan diatur posisinya relatif terhadap elemen yang berada di dalamnya yang memiliki posisi non-static (seperti `relative`, `absolute`, atau `fixed`). Properti `top`, `right`, `bottom`, dan `left` digunakan untuk mengatur posisi elemen ini.
+
+4. `fixed`: Elemen dengan `position: fixed` dihapus dari alur normal dokumen dan diatur posisinya relatif terhadap viewport browser. Ini berarti elemen akan tetap berada pada posisi yang sama di layar, bahkan saat pengguna menggulir halaman. Properti `top`, `right`, `bottom`, dan `left` digunakan untuk mengatur posisi elemen ini.
+
+5. `sticky`: Elemen dengan `position: sticky` berada dalam alur normal dokumen sampai mencapai titik tertentu, kemudian menjadi elemen yang tetap (fixed) relatif terhadap viewport. Anda dapat mengatur properti `top`, `right`, `bottom`, dan `left` untuk menentukan titik di mana elemen tersebut "menempel" pada viewport.
+
+Berikut ini adalah contoh implementasi sederhana:
+
+```html
+<style>
+  .container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+  }
+
+  .box {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+    height: 150px;
+    background-color: yellow;
+  }
+</style>
+
+<div class="container">
+  <div class="box"></div>
+</div>
+```
+
+Pada contoh di atas, `.container` memiliki posisi relatif (`position: relative`), sementara `.box` memiliki posisi absolut (`position: absolute`). Properti `top` dan `left` pada `.box` digunakan untuk mengatur posisi relatifnya terhadap `.container`.
+
+Anda dapat mengganti nilai `position` sesuai dengan kebutuhan dan mengatur properti-posisi lainnya (seperti `top`, `right`, `bottom`, dan `left`) untuk mencapai tata letak yang diinginkan.

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing function</title>
+
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px;
+            transition: 3s 2s;
+            
+        }
+
+        .kotak1 {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px;
+            transition: margin-left 3s, transform 3s 2s, background-color 1s 3s ;
+            
+        }
+
+        .container:hover .kotak {
+            transform: rotate(720deg);
+            margin-left: 800px;
+            background-color: royalblue;
+        }
+        .container:hover .kotak1 {
+            transform: rotate(720deg);
+            margin-left: 800px;
+            background-color: royalblue;
+        }
+
+        .container{
+
+width: 900px;
+margin: 10px;
+border: 5px solid black;
+}
+
+
+
+                </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak">delay 2detik</div>
+        <div class="kotak1">instan</div>
+
+     </div>
+     </body>
+</html>

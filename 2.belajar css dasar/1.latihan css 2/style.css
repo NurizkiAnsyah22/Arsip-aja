@@ -1,0 +1,18 @@
+/* belajar mengenal text styling */
+h1 { 
+color:brown;
+font-size: 100px;
+text-decoration:line-through;
+text-transform:lowercase;
+
+}
+p {
+    color: chocolate;
+    text-indent: 25px;
+    text-decoration:none;
+    word-spacing: 5px;
+
+}
+a {
+    text-decoration:none ;
+}

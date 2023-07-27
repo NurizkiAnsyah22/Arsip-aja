@@ -1,0 +1,160 @@
+Operator dalam JavaScript digunakan untuk melakukan operasi matematika, perbandingan, dan logika pada nilai-nilai. Berikut adalah operator-operator yang tersedia dalam JavaScript:
+
+1. Operator Aritmatika:
+   - Penjumlahan: `+`
+   - Pengurangan: `-`
+   - Perkalian: `*`
+   - Pembagian: `/`
+   - Modulus (Sisa Bagi): `%`
+   - Increment (Penambahan 1): `++`
+   - Decrement (Pengurangan 1): `--`
+
+2. Operator Perbandingan:
+   - Sama dengan: `==`
+   - Tidak sama dengan: `!=`
+   - Sama dengan (tipe data dan nilai): `===`
+   - Tidak sama dengan (tipe data dan nilai): `!==`
+   - Lebih besar dari: `>`
+   - Lebih kecil dari: `<`
+   - Lebih besar atau sama dengan: `>=`
+   - Lebih kecil atau sama dengan: `<=`
+
+3. Operator Logika:
+   - Logika AND: `&&`
+   - Logika OR: `||`
+   - Logika NOT: `!`
+
+4. Operator Penugasan:
+   - Penugasan nilai: `=`
+   - Penugasan penjumlahan: `+=`
+   - Penugasan pengurangan: `-=`
+   - Penugasan perkalian: `*=`
+   - Penugasan pembagian: `/=`
+   - Penugasan modulus: `%=`
+
+5. Operator Bitwise:
+   - AND bitwise: `&`
+   - OR bitwise: `|`
+   - XOR bitwise: `^`
+   - NOT bitwise: `~`
+   - Left shift: `<<`
+   - Right shift: `>>`
+   - Right shift dengan tanda: `>>>`
+
+6. Operator Ternary:
+   - Ternary: `condition ? expression1 : expression2`
+
+7. Operator typeof:
+   - typeof: `typeof operand`
+
+8. Operator Instanceof:
+   - Instanceof: `object instanceof constructor`
+
+Itulah beberapa operator yang tersedia dalam JavaScript. Operator ini digunakan untuk melakukan berbagai operasi dalam bahasa pemrograman JavaScript.
+
+
+
+Berikut adalah contoh implementasi dari beberapa operator dalam JavaScript:
+
+1. Operator Aritmatika:
+
+```javascript
+let a = 5;
+let b = 2;
+
+let sum = a + b; // Penjumlahan
+let difference = a - b; // Pengurangan
+let product = a * b; // Perkalian
+let quotient = a / b; // Pembagian
+let modulus = a % b; // Modulus (Sisa Bagi)
+let increment = ++a; // Increment (Penambahan 1)
+let decrement = --b; // Decrement (Pengurangan 1)
+
+console.log(sum); // Output: 7
+console.log(difference); // Output: 3
+console.log(product); // Output: 10
+console.log(quotient); // Output: 2.5
+console.log(modulus); // Output: 1
+console.log(increment); // Output: 6
+console.log(decrement); // Output: 1
+```
+
+2. Operator Perbandingan:
+
+```javascript
+let a = 5;
+let b = 3;
+
+console.log(a == b); // Output: false
+console.log(a != b); // Output: true
+console.log(a === b); // Output: false
+console.log(a !== b); // Output: true
+console.log(a > b); // Output: true
+console.log(a < b); // Output: false
+console.log(a >= b); // Output: true
+console.log(a <= b); // Output: false
+```
+
+3. Operator Logika:
+
+```javascript
+let x = true;
+let y = false;
+
+console.log(x && y); // Output: false
+console.log(x || y); // Output: true
+console.log(!x); // Output: false
+console.log(!y); // Output: true
+```
+
+4. Operator Penugasan:
+
+```javascript
+let a = 5;
+let b = 2;
+
+a += b; // a = a + b;
+console.log(a); // Output: 7
+
+a -= b; // a = a - b;
+console.log(a); // Output: 5
+
+a *= b; // a = a * b;
+console.log(a); // Output: 10
+
+a /= b; // a = a / b;
+console.log(a); // Output: 5
+
+a %= b; // a = a % b;
+console.log(a); // Output: 1
+```
+
+5. Operator Ternary:
+
+```javascript
+let age = 18;
+
+let message = (age >= 18) ? "You are an adult" : "You are not an adult";
+console.log(message); // Output: "You are an adult"
+```
+
+6. Operator typeof:
+
+```javascript
+let name = "John";
+let age = 25;
+
+console.log(typeof name); // Output: "string"
+console.log(typeof age); // Output: "number"
+```
+
+7. Operator instanceof:
+
+```javascript
+let fruits = ["apple", "banana", "orange"];
+
+console.log(fruits instanceof Array); // Output: true
+console.log(fruits instanceof Object); // Output: true
+```
+
+Itulah beberapa contoh implementasi dari operator-operator dalam JavaScript. Anda dapat menggabungkan operator-operator ini dengan ekspresi dan nilai-nilai sesuai dengan kebutuhan Anda dalam program JavaScript.

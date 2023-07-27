@@ -1,0 +1,75 @@
+Materi DOM Traversal (Penelusuran DOM)
+========================================
+
+DOM Traversal adalah proses menelusuri atau mengakses elemen-elemen dalam struktur dokumen HTML menggunakan JavaScript. Melalui DOM Traversal, Anda dapat memanipulasi elemen-elemen tersebut, mengubah nilai, menghapus, menambahkan, atau melakukan tindakan lainnya. Dalam materi ini, kita akan menjelajahi berbagai metode yang tersedia untuk melakukan penelusuran DOM.
+
+Berikut adalah beberapa metode umum yang digunakan dalam DOM Traversal:
+
+1. `parentNode`: Mengembalikan elemen induk dari elemen yang ditentukan.
+2. `childNodes`: Mengembalikan daftar node anak dari elemen yang ditentukan.
+3. `firstChild`: Mengembalikan node pertama dalam daftar node anak dari elemen yang ditentukan.
+4. `lastChild`: Mengembalikan node terakhir dalam daftar node anak dari elemen yang ditentukan.
+5. `nextSibling`: Mengembalikan node saudara berikutnya dari elemen yang ditentukan.
+6. `previousSibling`: Mengembalikan node saudara sebelumnya dari elemen yang ditentukan.
+7. `querySelector`: Mengembalikan elemen pertama yang cocok dengan selector CSS yang ditentukan.
+8. `querySelectorAll`: Mengembalikan daftar elemen yang cocok dengan selector CSS yang ditentukan.
+9. `getElementsByTagName`: Mengembalikan daftar elemen dengan tag yang ditentukan.
+10. `getElementsByClassName`: Mengembalikan daftar elemen dengan kelas yang ditentukan.
+
+Contoh Implementasi DOM Traversal
+---------------------------------
+
+Berikut ini adalah contoh implementasi DOM Traversal dengan menggunakan metode-metode yang telah disebutkan sebelumnya:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Traversal Example</title>
+</head>
+<body>
+  <div id="container">
+    <h1>DOM Traversal Example</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <p>Paragraph</p>
+  </div>
+
+  <script>
+    // Contoh penggunaan metode DOM Traversal
+    const container = document.getElementById("container");
+
+    // Mengakses elemen induk
+    const parent = container.parentNode;
+    console.log("Parent Element:", parent);
+
+    // Mengakses daftar node anak
+    const children = container.childNodes;
+    console.log("Children Nodes:", children);
+
+    // Mengakses node pertama dan terakhir
+    const firstChild = container.firstChild;
+    const lastChild = container.lastChild;
+    console.log("First Child Node:", firstChild);
+    console.log("Last Child Node:", lastChild);
+
+    // Mengakses node saudara berikutnya dan sebelumnya
+    const nextSibling = container.nextSibling;
+    const previousSibling = container.previousSibling;
+    console.log("Next Sibling Node:", nextSibling);
+    console.log("Previous Sibling Node:", previousSibling);
+
+    // Mengakses elemen dengan selector CSS
+    const listItem = document.querySelector("li");
+    console.log("Selected Element:", listItem);
+
+    // Mengakses daftar elemen dengan tag
+    const paragraphs = document.getElementsByTagName("p");
+    console.log("Paragraphs:", paragraphs);
+
+    // Mengakses daftar elemen dengan kelas
+    const items = document.getElementsByClassName("item");
+    console.log

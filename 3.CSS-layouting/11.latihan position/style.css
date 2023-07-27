@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+
+body {
+    font: 15px/28px arial, sans-serif;
+    background-color:aqua;
+    color: brown;
+    background-image: url(img/bgbody.png);
+}
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: aqua;
+    border-bottom: 3px solid salmon;
+    z-index: 99999;
+}
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color:honeydew;
+    position: relative;
+}
+
+.linkedin {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/linkedin.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -99999px;
+    position: absolute;
+    top: -31px;
+    right: -8px;
+    
+}
+
+
+.header {
+    padding: 20px;
+    padding-bottom: 12px;
+    margin: 22px;
+}
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    padding: 3px;
+}
+.header a:hover {
+    background-color:cyan;
+    color:black;
+}
+
+.hero {
+    height: 400px;
+    background-image:url(img/latar.png);
+    background-size: cover;
+    background-position: 0 -200px;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid violet;
+
+}
+.main {
+    width: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+
+}
+.main h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.main .penulis {
+    font-size: 15px;
+    margin-top: -5px;
+    letter-spacing: 3px;
+    margin-left: 2px;
+
+
+}
+.penulis a {
+    margin: 5px;
+}
+
+.main .penulis a {
+    color:indigo;
+    text-decoration: none;
+}
+
+.penulis a:hover{
+    color:chocolate;
+    background-color: greenyellow;
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+
+/*sidebar*/
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+
+}
+.sidebar img {
+   width: 70px;
+   height: 70px;
+   float: left;
+   padding-right: 7px;
+}
+.sidebar h3{
+    color:darkblue;
+    font-weight: bold;
+    
+}
+
+.sidebar p {
+    font: 12px/15px arial;
+
+}
+
+
+.footer {
+    background-color: darkcyan;
+    padding: 10px;
+}
+.footer .copy {
+    color:chartreuse;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/*ini adalah clear fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

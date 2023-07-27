@@ -1,0 +1,63 @@
+Node manipulasi DOM (Document Object Model) adalah teknik yang digunakan untuk memanipulasi elemen-elemen HTML dan CSS di dalam halaman web menggunakan JavaScript. Dengan menggunakan node manipulasi DOM, Anda dapat menambahkan, menghapus, atau memodifikasi elemen-elemen tersebut secara dinamis.
+
+Berikut adalah langkah-langkah umum untuk melakukan manipulasi node menggunakan JavaScript:
+
+1. Mengakses elemen:
+   - `getElementById()`: Mengembalikan elemen dengan ID yang sesuai.
+   - `getElementsByClassName()`: Mengembalikan koleksi elemen dengan kelas yang sesuai.
+   - `getElementsByTagName()`: Mengembalikan koleksi elemen dengan tag yang sesuai.
+   - `querySelector()`: Mengembalikan elemen pertama yang cocok dengan selector CSS tertentu.
+   - `querySelectorAll()`: Mengembalikan koleksi semua elemen yang cocok dengan selector CSS tertentu.
+
+2. Memodifikasi elemen:
+   - `innerHTML`: Mengambil atau mengatur isi HTML dari elemen.
+   - `innerText`: Mengambil atau mengatur teks dari elemen (tanpa HTML).
+   - `setAttribute()`: Mengatur atribut pada elemen.
+   - `style.property`: Mengatur properti gaya CSS pada elemen.
+   - `classList.add()`: Menambahkan kelas pada elemen.
+   - `classList.remove()`: Menghapus kelas dari elemen.
+   - `classList.toggle()`: Mengubah status kelas (menambah atau menghapus) pada elemen.
+
+3. Membuat dan menambahkan elemen baru:
+   - `createElement()`: Membuat elemen baru.
+   - `appendChild()`: Menambahkan elemen sebagai anak dari elemen lain.
+   - `insertBefore()`: Menyisipkan elemen sebelum elemen yang ada.
+
+4. Menghapus elemen:
+   - `removeChild()`: Menghapus elemen anak dari elemen lain.
+   - `remove()`: Menghapus elemen itu sendiri.
+
+Contoh Implementasi:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulasi DOM</title>
+</head>
+<body>
+    <div id="myDiv">
+        <p>Hello, <span id="name">John</span>!</p>
+    </div>
+
+    <script>
+        // Mengubah teks di dalam elemen dengan ID "name"
+        var nameElement = document.getElementById("name");
+        nameElement.innerText = "Jane";
+
+        // Menambahkan elemen baru
+        var newElement = document.createElement("p");
+        newElement.innerText = "This is a new paragraph.";
+        document.getElementById("myDiv").appendChild(newElement);
+
+        // Menghapus elemen
+        var paragraph = document.getElementsByTagName("p")[0];
+        paragraph.remove();
+    </script>
+</body>
+</html>
+```
+
+Pada contoh di atas, kita mengakses elemen dengan ID "name" dan mengubah teksnya menjadi "Jane". Kemudian, kita membuat elemen `<p>` baru, mengatur teksnya, dan menambahkannya sebagai anak dari elemen dengan ID "myDiv". Terakhir, kita menghapus elemen pertama `<p>` yang ada di dalam dokumen.
+
+Perhatikan bahwa manipulasi DOM bisa dilakukan dengan lebih banyak metode dan properti yang ditawarkan oleh API DOM JavaScript. Anda dapat menyesuaikan kode sesuai kebutuhan Anda.

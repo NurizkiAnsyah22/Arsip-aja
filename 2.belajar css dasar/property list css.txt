@@ -1,0 +1,222 @@
+Tentu! Berikut ini adalah daftar property CSS secara lengkap beserta penjelasan kegunaan masing-masing:
+
+1. `align-content`: Mengatur cara konten dalam suatu elemen fleksibel atau grid sejajar secara vertikal.
+2. `align-items`: Mengatur cara item dalam suatu elemen fleksibel atau grid sejajar secara vertikal.
+3. `align-self`: Mengatur cara item individual dalam suatu elemen fleksibel atau grid sejajar secara vertikal.
+4. `animation`: Mengatur animasi pada elemen dengan menggabungkan properti-properti animasi lainnya seperti `animation-name`, `animation-duration`, dll.
+5. `animation-delay`: Menunda mulainya animasi.
+6. `animation-direction`: Mengatur arah perulangan animasi.
+7. `animation-duration`: Mengatur durasi animasi.
+8. `animation-fill-mode`: Mengatur bagaimana elemen diperlakukan sebelum dan setelah animasi.
+9. `animation-iteration-count`: Mengatur jumlah kali perulangan animasi.
+10. `animation-name`: Menentukan nama animasi yang akan digunakan.
+11. `animation-play-state`: Mengatur status pemutaran animasi.
+12. `animation-timing-function`: Mengatur fungsi waktu animasi untuk mengontrol percepatan atau perlambatan animasi.
+13. `backface-visibility`: Menentukan apakah sisi belakang elemen terlihat saat diputar.
+14. `background`: Mengatur gambar latar belakang dan warna elemen.
+15. `background-attachment`: Mengatur apakah gambar latar belakang akan bergulir bersama elemen atau tetap diam.
+16. `background-blend-mode`: Mengatur cara gabungan antara gambar latar belakang dengan elemen.
+17. `background-color`: Mengatur warna latar belakang elemen.
+18. `background-image`: Mengatur gambar latar belakang elemen.
+19. `background-position`: Mengatur posisi awal gambar latar belakang.
+20. `background-repeat`: Mengatur pengulangan gambar latar belakang.
+21. `background-size`: Mengatur ukuran gambar latar belakang.
+22. `border`: Mengatur gaya, lebar, dan warna batas elemen.
+23. `border-bottom`: Mengatur gaya, lebar, dan warna batas bagian bawah elemen.
+24. `border-bottom-color`: Mengatur warna batas bagian bawah elemen.
+25. `border-bottom-left-radius`: Mengatur radius sudut kiri bawah dari batas elemen.
+26. `border-bottom-right-radius`: Mengatur radius sudut kanan bawah dari batas elemen.
+27. `border-bottom-style`: Mengatur gaya batas bagian bawah elemen.
+28. `border-bottom-width`: Mengatur lebar batas bagian bawah elemen.
+29. `border-collapse`: Mengatur apakah batas antara sel-sel tabel akan digabung atau terpisah.
+30. `border-color`: Mengatur warna batas elemen.
+31. `border-left`: Mengatur gaya, lebar, dan warna batas bagian kiri elemen.
+32. `border-left-color`: Mengatur warna batas bagian kiri elemen.
+33. `border-left-style`: Mengatur gaya batas bagian kiri elemen.
+34. `border-left-width`: Mengatur lebar
+
+ batas bagian kiri elemen.
+35. `border-radius`: Mengatur radius sudut dari batas elemen.
+36. `border-right`: Mengatur gaya, lebar, dan warna batas bagian kanan elemen.
+37. `border-right-color`: Mengatur warna batas bagian kanan elemen.
+38. `border-right-style`: Mengatur gaya batas bagian kanan elemen.
+39. `border-right-width`: Mengatur lebar batas bagian kanan elemen.
+40. `border-spacing`: Mengatur jarak antara sel-sel tabel.
+41. `border-style`: Mengatur gaya batas elemen.
+42. `border-top`: Mengatur gaya, lebar, dan warna batas bagian atas elemen.
+43. `border-top-color`: Mengatur warna batas bagian atas elemen.
+44. `border-top-left-radius`: Mengatur radius sudut kiri atas dari batas elemen.
+45. `border-top-right-radius`: Mengatur radius sudut kanan atas dari batas elemen.
+46. `border-top-style`: Mengatur gaya batas bagian atas elemen.
+47. `border-top-width`: Mengatur lebar batas bagian atas elemen.
+48. `border-width`: Mengatur lebar batas elemen.
+49. `bottom`: Mengatur jarak antara elemen dan sisi bawah elemen induknya.
+50. `box-shadow`: Mengatur bayangan pada elemen.
+51. `box-sizing`: Mengatur bagaimana ukuran total elemen dihitung.
+52. `caption-side`: Mengatur posisi keterangan tabel.
+53. `clear`: Mengatur bagaimana elemen akan berinteraksi dengan elemen sebelumnya yang floating.
+54. `clip`: Memotong elemen menjadi bentuk yang ditentukan.
+55. `color`: Mengatur warna teks elemen.
+56. `column-count`: Mengatur jumlah kolom dalam elemen dengan tata letak kolom.
+57. `column-fill`: Mengatur cara isi kolom dilakukan pada elemen dengan tata letak kolom.
+58. `column-gap`: Mengatur jarak antara kolom dalam elemen dengan tata letak kolom.
+59. `column-rule`: Menggabungkan properti-properti batas pada elemen dengan tata letak kolom.
+60. `column-rule-color`: Mengatur warna batas pada elemen dengan tata letak kolom.
+61. `column-rule-style`: Mengatur gaya batas pada elemen dengan tata letak kolom.
+62. `column-rule-width`: Mengatur lebar batas pada elemen dengan tata letak kolom.
+63. `column-span`: Menentukan apakah elemen akan mencakup beberapa kolom dalam elemen dengan tata letak kolom.
+64. `column-width`: Mengatur lebar kolom dalam elemen dengan tata letak kolom.
+65. `columns`: Menggabungkan properti-properti kolom pada elemen dengan tata letak kolom.
+66. `content`: Menentukan konten yang akan ditampilkan dengan pseudo-elemen `::before` dan `::after`.
+67. `counter-increment`: Menambahkan jumlah ke suatu counter dengan nama yang ditentukan.
+68. `counter-reset`: Mengatur ulang nilai suatu counter dengan nama yang ditentukan.
+69. `cursor`: Mengatur tampilan kursor saat berada di atas elemen.
+70. `direction`: Mengatur arah teks
+
+ elemen.
+71. `display`: Mengatur bagaimana elemen ditampilkan dalam tata letak dokumen.
+72. `empty-cells`: Mengatur apakah sel-sel tabel kosong akan menampilkan batas atau tidak.
+73. `filter`: Mengatur efek visual pada elemen, seperti blur atau gradien.
+74. `flex`: Menggabungkan properti-properti fleksibel pada elemen.
+75. `flex-basis`: Mengatur ukuran awal fleksibilitas elemen dalam suatu kontainer fleksibel.
+76. `flex-direction`: Mengatur arah item dalam suatu kontainer fleksibel.
+77. `flex-flow`: Menggabungkan properti-properti arah dan perataan dalam suatu kontainer fleksibel.
+78. `flex-grow`: Mengatur seberapa besar elemen akan tumbuh dalam suatu kontainer fleksibel.
+79. `flex-shrink`: Mengatur seberapa besar elemen akan menyusut dalam suatu kontainer fleksibel.
+80. `flex-wrap`: Mengatur apakah item dalam suatu kontainer fleksibel akan membungkus ke baris baru.
+81. `float`: Mengatur posisi elemen dengan mengapungkannya ke sisi tertentu.
+82. `font`: Menggabungkan properti-properti terkait font, seperti `font-family`, `font-size`, dll.
+83. `font-family`: Mengatur jenis font yang akan digunakan pada teks.
+84. `font-size`: Mengatur ukuran font pada teks.
+85. `font-style`: Mengatur gaya font pada teks, seperti italic atau normal.
+86. `font-variant`: Mengatur varian font pada teks, seperti small caps.
+87. `font-weight`: Mengatur ketebalan font pada teks.
+88. `gap`: Mengatur jarak antara grid atau fleksibilitas elemen.
+89. `grid`: Menggabungkan properti-properti grid pada elemen.
+90. `grid-area`: Mengatur nama area dan posisi elemen dalam grid.
+91. `grid-auto-columns`: Mengatur lebar kolom otomatis dalam grid.
+92. `grid-auto-flow`: Mengatur cara elemen tambahan ditempatkan dalam grid otomatis.
+93. `grid-auto-rows`: Mengatur tinggi baris otomatis dalam grid.
+94. `grid-column`: Mengatur posisi kolom elemen dalam grid.
+95. `grid-column-end`: Mengatur posisi akhir kolom elemen dalam grid.
+96. `grid-column-gap`: Mengatur jarak antara kolom dalam grid.
+97. `grid-column-start`: Mengatur posisi awal kolom elemen dalam grid.
+98. `grid-gap`: Mengatur jarak antara baris dan kolom dalam grid.
+99. `grid-row`: Mengatur posisi baris elemen dalam grid.
+100. `grid-row-end`: Mengatur posisi akhir baris elemen dalam grid.
+101. `grid-row-gap`: Mengatur jarak antara baris dalam grid.
+102. `grid-row-start`: Mengatur posisi awal baris elemen dalam grid.
+103. `grid-template`: Menggabungkan properti-properti template grid dalam elemen.
+104. `grid-template-areas`: Mengatur nama area dan tata letak elemen dalam grid.
+105. `grid-template-columns`: Mengatur lebar kolom dalam grid.
+106. `grid-template-rows`: Mengatur tinggi baris dalam grid.
+107. `height`: Mengatur ting
+
+gi elemen.
+108. `hyphens`: Mengatur pemenggalan kata dalam teks saat terjadi wrap.
+109. `image-rendering`: Mengatur kualitas tampilan gambar saat diubah ukurannya.
+110. `isolation`: Mengatur elemen apakah akan terisolasi atau tercampur dengan elemen sekitarnya dalam tata letak.
+111. `justify-content`: Mengatur cara konten dalam suatu elemen fleksibel atau grid sejajar secara horizontal.
+112. `left`: Mengatur jarak antara elemen dan sisi kiri elemen induknya.
+113. `letter-spacing`: Mengatur jarak antara huruf dalam teks.
+114. `line-height`: Mengatur tinggi baris dalam teks.
+115. `list-style`: Menggabungkan properti-properti gaya daftar pada elemen.
+116. `list-style-image`: Mengatur gambar yang akan digunakan sebagai tanda daftar.
+117. `list-style-position`: Mengatur posisi tanda daftar (inside atau outside).
+118. `list-style-type`: Mengatur jenis tanda daftar.
+119. `margin`: Mengatur jarak luar elemen.
+120. `margin-bottom`: Mengatur jarak bawah elemen.
+121. `margin-left`: Mengatur jarak kiri elemen.
+122. `margin-right`: Mengatur jarak kanan elemen.
+123. `margin-top`: Mengatur jarak atas elemen.
+124. `mask`: Mengatur efek masker pada elemen.
+125. `mask-image`: Mengatur gambar yang digunakan sebagai masker pada elemen.
+126. `max-height`: Mengatur tinggi maksimum elemen.
+127. `max-width`: Mengatur lebar maksimum elemen.
+128. `min-height`: Mengatur tinggi minimum elemen.
+129. `min-width`: Mengatur lebar minimum elemen.
+130. `mix-blend-mode`: Mengatur cara elemen akan dicampur dengan elemen di bawahnya.
+131. `object-fit`: Mengatur cara gambar atau video disesuaikan dengan elemen.
+132. `object-position`: Mengatur posisi gambar atau video dalam elemen.
+133. `opacity`: Mengatur tingkat transparansi elemen.
+134. `order`: Mengatur urutan tampilan elemen dalam suatu kontainer fleksibel.
+135. `orphans`: Mengatur jumlah baris terakhir pada paragraf yang dapat dipisahkan sebelum terjadi pemotongan halaman.
+136. `outline`: Menggabungkan properti-properti batas luar pada elemen.
+137. `outline-color`: Mengatur warna batas luar elemen.
+138. `outline-offset`: Mengatur jarak antara batas luar dan elemen.
+139. `outline-style`: Mengatur gaya batas luar elemen.
+140. `outline-width`: Mengatur lebar batas luar elemen.
+141. `overflow`: Mengatur tampilan konten saat melebihi ukuran elemen.
+142. `overflow-wrap`: Mengatur cara pemotongan kata saat teks melebihi lebar elemen.
+143. `overflow-x`: Mengatur tampilan konten secara horizontal saat melebihi ukuran elemen.
+144. `overflow-y`: Mengatur tampilan konten secara vertikal saat melebihi ukuran elemen.
+145. `padding`: Mengatur jarak dalam elemen.
+146. `padding-bottom`: Mengatur jarak bawah elemen.
+147.
+
+ `padding-left`: Mengatur jarak kiri elemen.
+148. `padding-right`: Mengatur jarak kanan elemen.
+149. `padding-top`: Mengatur jarak atas elemen.
+150. `page-break-after`: Mengatur perilaku pemisahan halaman setelah elemen.
+151. `page-break-before`: Mengatur perilaku pemisahan halaman sebelum elemen.
+152. `page-break-inside`: Mengatur perilaku pemisahan halaman di dalam elemen.
+153. `perspective`: Mengatur kedalaman pandangan perspektif untuk transformasi 3D.
+154. `perspective-origin`: Mengatur titik pusat pandangan perspektif untuk transformasi 3D.
+155. `pointer-events`: Mengatur interaksi dengan elemen menggunakan perangkat penunjuk.
+156. `position`: Mengatur posisi elemen.
+157. `quotes`: Mengatur tanda kutip pada elemen.
+158. `resize`: Mengatur apakah elemen dapat diubah ukurannya oleh pengguna.
+159. `right`: Mengatur jarak antara elemen dan sisi kanan elemen induknya.
+160. `row-gap`: Mengatur jarak antara baris dalam grid atau fleksibilitas elemen.
+161. `ruby-align`: Mengatur posisi ruby pada elemen teks.
+162. `ruby-overhang`: Mengatur sejauh mana ruby melampaui teks dasar.
+163. `ruby-position`: Mengatur posisi ruby pada elemen teks.
+164. `scale`: Mengatur skala transformasi elemen.
+165. `scroll-behavior`: Mengatur perilaku animasi saat menggulir ke suatu posisi pada halaman.
+166. `scroll-snap-coordinate`: Mengatur titik koordinat pengguliran snap pada elemen.
+167. `scroll-snap-destination`: Mengatur posisi tujuan pengguliran snap pada elemen.
+168. `scroll-snap-points-x`: Mengatur titik pengguliran snap horizontal pada elemen.
+169. `scroll-snap-points-y`: Mengatur titik pengguliran snap vertikal pada elemen.
+170. `scroll-snap-type`: Mengatur jenis pengguliran snap pada elemen.
+171. `shape-image-threshold`: Mengatur ambang batas untuk tampilan gambar sebagai bentuk pada elemen.
+172. `shape-margin`: Mengatur jarak antara elemen dan bentuk yang diterapkan ke elemen tersebut.
+173. `shape-outside`: Mengatur bentuk yang mengelilingi elemen dalam tata letak aliran.
+174. `tab-size`: Mengatur lebar tabulasi dalam elemen teks.
+175. `table-layout`: Mengatur tata letak tabel.
+176. `text-align`: Mengatur penjajaran teks dalam elemen.
+177. `text-align-last`: Mengatur penjajaran teks untuk baris terakhir dalam elemen.
+178. `text-decoration`: Menggabungkan properti-properti dekorasi teks pada elemen.
+179. `text-decoration-color`: Mengatur warna dekorasi teks pada elemen.
+180. `text-decoration-line`: Mengatur jenis dekorasi teks pada elemen.
+181. `text-decoration-style`: Mengatur gaya dekorasi teks pada elemen.
+182. `text-indent`: Mengatur jarak sisipan pada paragraf pertama dalam elemen.
+183. `text-justify`: Mengatur cara penyejajaran teks dalam elemen.
+184. `text
+
+-orientation`: Mengatur orientasi teks dalam elemen.
+185. `text-overflow`: Mengatur tampilan teks yang melewati batas elemen.
+186. `text-rendering`: Mengatur kualitas tampilan teks.
+187. `text-shadow`: Mengatur bayangan teks pada elemen.
+188. `text-transform`: Mengatur transformasi teks, seperti lowercase atau uppercase.
+189. `text-underline-position`: Mengatur posisi garis bawah teks.
+190. `top`: Mengatur jarak antara elemen dan sisi atas elemen induknya.
+191. `transform`: Menggabungkan properti-properti transformasi pada elemen.
+192. `transform-origin`: Mengatur titik pusat transformasi pada elemen.
+193. `transform-style`: Mengatur apakah anak elemen akan diubah dalam transformasi 3D.
+194. `transition`: Menggabungkan properti-properti transisi pada elemen.
+195. `transition-delay`: Mengatur penundaan sebelum transisi dimulai.
+196. `transition-duration`: Mengatur durasi transisi.
+197. `transition-property`: Mengatur properti yang akan mengalami transisi.
+198. `transition-timing-function`: Mengatur fungsi waktu transisi.
+199. `unicode-bidi`: Mengatur arah penulisan teks dan pemrosesan urutan karakter.
+200. `user-select`: Mengatur apakah teks dapat dipilih oleh pengguna.
+201. `vertical-align`: Mengatur penjajaran vertikal elemen terhadap elemen tetangganya.
+202. `visibility`: Mengatur tampilan elemen.
+203. `white-space`: Mengatur cara elemen menangani spasi putih dalam teks.
+204. `widows`: Mengatur jumlah baris pertama pada paragraf yang dapat dipisahkan sebelum terjadi pemotongan halaman.
+205. `width`: Mengatur lebar elemen.
+206. `will-change`: Menginformasikan perubahan yang diharapkan pada elemen sehingga browser dapat mengoptimalkan pemrosesan.
+207. `word-break`: Mengatur cara pemotongan kata saat teks melebihi lebar elemen.
+208. `word-spacing`: Mengatur jarak antara kata dalam teks.
+209. `writing-mode`: Mengatur arah penulisan teks dan tata letak elemen.
+210. `z-index`: Mengatur urutan tampilan elemen dalam tumpukan.

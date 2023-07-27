@@ -1,0 +1,90 @@
+1. Execution Context:
+Execution context (konteks eksekusi) adalah lingkungan di mana kode JavaScript dieksekusi. Setiap kali kode JavaScript dieksekusi, execution context dibuat untuk menjalankan kode tersebut. Execution context mencakup tiga komponen utama:
+
+   - Variable Object (VO): Merupakan daftar variabel dan fungsi yang dapat diakses pada saat eksekusi.
+   - Scope Chain: Merupakan hierarki dari variabel objek dan objek lingkungan yang dapat diakses pada saat eksekusi.
+   - this: Merupakan referensi ke objek saat ini yang sedang dieksekusi.
+
+2. Hoisting:
+Hoisting adalah perilaku di mana JavaScript secara otomatis mengangkat deklarasi variabel dan fungsi ke bagian atas scope saat kode dieksekusi. Ini berarti Anda dapat menggunakan variabel atau fungsi sebelum Anda mendeklarasikannya dalam kode. Namun, hanya deklarasi yang diangkat, bukan inisialisasi.
+
+   - Contoh hoisting variabel:
+     ```javascript
+     console.log(x); // Output: undefined
+     var x = 5;
+     console.log(x); // Output: 5
+     ```
+
+   - Contoh hoisting fungsi:
+     ```javascript
+     sayHello(); // Output: Hello!
+
+     function sayHello() {
+       console.log("Hello!");
+     }
+     ```
+
+3. Scope:
+Scope mengacu pada bagian dari kode di mana variabel dan fungsi dapat diakses. Ada dua jenis scope utama dalam JavaScript:
+
+   - Global Scope: Variabel yang dideklarasikan di luar fungsi dapat diakses dari mana saja dalam kode.
+     ```javascript
+     var x = 5; // Variabel global
+
+     function printX() {
+       console.log(x);
+     }
+
+     printX(); // Output: 5
+     ```
+
+   - Local Scope: Variabel yang dideklarasikan di dalam fungsi hanya dapat diakses di dalam fungsi tersebut.
+     ```javascript
+     function printY() {
+       var y = 10; // Variabel lokal
+       console.log(y);
+     }
+
+     printY(); // Output: 10
+     console.log(y); // Error: y is not defined
+     ```
+
+4. Implementasi:
+
+   - Execution Context:
+     ```javascript
+     function greet(name) {
+       console.log(`Hello, ${name}!`);
+     }
+
+     greet("John"); // Output: Hello, John!
+     ```
+
+   - Hoisting:
+     ```javascript
+     console.log(x); // Output: undefined
+     var x = 5;
+     console.log(x); // Output: 5
+
+     sayHello(); // Output: Hello!
+
+     function sayHello() {
+       console.log("Hello!");
+     }
+     ```
+
+   - Scope:
+     ```javascript
+     var globalVariable = "I'm global";
+
+     function printVariables() {
+       var localVariable = "I'm local";
+       console.log(localVariable); // Output: I'm local
+       console.log(globalVariable); // Output: I'm global
+     }
+
+     printVariables();
+     console.log(localVariable); // Error: localVariable is not defined
+     ```
+
+Dalam implementasi di atas, Anda dapat melihat bagaimana execution context diciptakan saat kode dieksekusi, variabel diangkat (hoisted), dan bagaimana variabel dapat diakses berdasarkan scope yang relevan.

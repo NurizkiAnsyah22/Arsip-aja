@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+
+        body {
+            background-image: url(img/bgbody.png);
+
+            /* opacity untuk elemen transparan warna sedangkan rgba
+            dan hsla untuk transparan warna itu sendiri*/
+
+        }
+        .satu {
+            width: 300px;
+            height: 300px;
+            background-color:hsla(30, 74%, 35%, 0.5);
+            
+            position: relative;
+        }
+        .dua {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(72, 72, 138,0.9);
+            position: absolute;
+            right: -50px;;
+            bottom: -50px;
+           
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="satu">
+        <div class="dua"></div>
+    </div>    
+</body>
+</html>
